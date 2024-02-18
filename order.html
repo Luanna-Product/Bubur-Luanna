@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Food</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <img class="logo" src="logo.png" alt="Logo">
+        <div class="header">
+            <h2>Order here!</h2>
+            <p>Di sini bunda bisa mengubah pesanan lebih detail</p>
+        </div>
+
+        <div class="date-section">
+            <form id="dateForm">
+                <label for="date">Bunda mau mulai pesan kapan?</label>
+                <input type="text" id="date" placeholder="Pilih tanggal" required>
+                <button type="submit">Confirm</button>
+            </form>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+        <script>
+            flatpickr("#date", {
+                minDate: new Date().fp_incr(1), // Mendapatkan tanggal besok
+                dateFormat: "Y-m-d"
+            });
+        </script>
+
+        <div id="menuSection" class="menu-section"> <!-- Add id to the menu section -->
+            <p>Harap mengisi detail tanggal di atas terlebih dahulu</p>
+        </div>
+
+        <div id="order-form" class="order-method">
+            <select id="orderMethod">
+                <!-- <option value="">Pilih Metode Pemesanan</option>
+                <option value="outlet">Outlet</option>
+                <option value="delivery">Delivery</option> -->
+            </select>
+            <p id="order-cost">Pilih metode pemesanan</p>
+        </div>
+
+        <div id="outlet-info" style="display: none;">
+            <!-- Konten div yang muncul ketika opsi "Outlet" dipilih -->
+            <select id="outletOption">
+                <option value="">Pilih Lokasi Outlet</option>
+                <option value="brosot">Brosot</option>
+                <option value="wates">Wates</option>
+            </select>
+        </div>
+
+        <div id="final-form" class="final-form">
+            <h3 id="finalMethod"></h3>
+        </div>
+
+
+        <div class="logOrdersBtn">
+            <button id="logOrdersBtn"><i class="fa fa-whatsapp" aria-hidden="true"></i> <br>Pesan Via Whatsapp</button>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

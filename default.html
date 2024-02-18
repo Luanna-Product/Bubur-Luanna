@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Food</title>
+    <link rel="stylesheet" href="default-styles.css">
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo">
+        <h2>Order here!</h2>
+        <p>Bunda mau pesan menu apa saja?</p>
+    </header>
+    <main>
+        <div class="menu-section">
+            <div class="menu-item">
+                <span>Bubur menu A <sup>1</sup>&frasl;<sub>2</sub> porsi</span>
+                <input type="number" min="0" value="0" class="quantity" id="quantity-buburA-half">
+            </div>
+            <hr style="width:100%;text-align:center; opacity: 0.5;">
+            <div class="menu-item">
+                <span>Bubur menu A 1 porsi</span>
+                <input type="number" min="0" value="0" class="quantity" id="quantity-buburA-1">
+            </div>
+            <hr style="width:100%;text-align:center; opacity: 0.5;">
+            <div class="menu-item">
+                <span>Bubur menu B <sup>1</sup>&frasl;<sub>2</sub> porsi</span>
+                <input type="number" min="0" value="0" class="quantity" id="quantity-buburB-half">
+            </div>
+            <hr style="width:100%;text-align:center; opacity: 0.5;">
+            <div class="menu-item">
+                <span>Bubur menu B 1 porsi</span>
+                <input type="number" min="0" value="0" class="quantity" id="quantity-buburB-1">
+            </div>
+            <hr style="width:100%;text-align:center; opacity: 0.5;">
+            <div class="menu-item">
+                <span>Nasi Tim <sup>1</sup>&frasl;<sub>2</sub> porsi</span>
+                <input type="number" min="0" value="0" class="quantity" id="quantity-nasitim-half">
+            </div>
+            <hr style="width:100%;text-align:center; opacity: 0.5;">
+            <div class="menu-item">
+                <span>Nasi Tim 1 porsi</span>
+                <input type="number" min="0" value="0" class="quantity" id="quantity-nasitim-1">
+            </div>
+            <hr style="width:100%;text-align:center; opacity: 0.5;">
+            <div class="menu-item">
+                <span>Sup</span>
+                <input type="number" min="0" value="0" class="quantity" id="quantity-sup">
+            </div>
+            <hr style="width:100%;text-align:center; opacity: 0.5;">
+            <div class="menu-item">
+                <span>Jus Buah</span>
+                <input type="number" min="0" value="0" class="quantity" id="quantity-jusbuah">
+            </div>
+
+            <hr style="width:100%;text-align:center; opacity: 0.5;">
+            <div class="menu-item">
+                <span>Paket Bubur Frozen Kotak (isi 10 pcs)</span>
+                <input type="number" min="0" value="0" class="quantity" id="quantity-paketbuburfrozenkotak">
+            </div>
+
+            <hr style="width:100%;text-align:center; opacity: 0.5;">
+            <div class="menu-item">
+                <span>Bubur Frozen Cup</span>
+                <input type="number" min="0" value="0" class="quantity" id="quantity-buburfrozencup">
+            </div>
+
+            <hr style="width:100%;text-align:center; opacity: 0.5;">
+            <div class="menu-item">
+                <span>Bubur Frozen Kotak</span>
+                <input type="number" min="0" value="0" class="quantity" id="quantity-buburfrozenkotak">
+            </div>
+        </div>
+        <div class="menu-section">
+            <h3>Untuk melihat produk lain klik tombol hijau di bawah</h3>
+        </div>
+    </main>
+    <div class="button">
+        <button id="logButton">Lanjut Melihat Detail Pesanan</button> <!-- Tombol untuk melakukan log -->
+    </div>
+    <script src="default-script.js"></script>
+</body>
+</html>

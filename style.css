@@ -1,0 +1,325 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 3;
+    padding: 3;
+}
+
+.header {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.logo {
+    width: 300px;
+    /* Ukuran logo yang diperbesar */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    /* Menengahkan logo */
+}
+
+.date-section {
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 90%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.date-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.date-section input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.date-section button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.date-section button:hover {
+    background-color: #0056b3;
+}
+
+button[type="submit"] {
+    margin-top: 10px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+.menu-section {
+    border-top: 2px solid #ccc;
+    /* Add border to separate date and menu */
+    padding-top: 20px;
+    /* Add padding to create space */
+
+    max-width: 90%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logOrdersBtn {
+    border-top: 2px solid #ccc;
+    /* Add border to separate date and menu */
+    padding-top: 20px;
+    /* Add padding to create space */
+
+    max-width: 90%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-top: 0;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="date"] {
+    width: calc(100% - 85px);
+    /* Adjusted width to accommodate button */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.menu-item {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.quantity {
+    width: 50px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+#total {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.toggle-button {
+    align-items: left;
+}
+
+.final-form {
+    border-top: 2px solid #ccc;
+    /* Add border to separate date and menu */
+    padding-top: 20px;
+    /* Add padding to create space */
+
+    max-width: 90%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logOrdersBtn {
+    text-align: center;
+    /* Mengatur posisi teks di tengah tombol */
+}
+
+#logOrdersBtn {
+    /* Gaya untuk tombol */
+    display: inline-block;
+    /* Membuat tombol berada dalam baris dan kolom yang sama */
+    padding: 10px 20px;
+    /* Padding di sekitar teks di dalam tombol */
+    font-size: 16px;
+    /* Ukuran font teks */
+    background-color: red;
+    /* Warna latar belakang tombol */
+    color: #fff;
+    /* Warna teks */
+    border: none;
+    /* Menghapus garis pinggiran */
+    border-radius: 5px;
+    /* Sudut sudut yang dibulatkan */
+    cursor: pointer;
+    /* Mengubah kursor saat mengarah ke tombol */
+    margin: 0 auto;
+    /* Mengatur margin otomatis untuk menempatkan tombol di tengah horizontal */
+}
+
+#logOrdersBtn i {
+    /* Gaya untuk ikon */
+    font-size: 50px;
+    /* Ukuran font ikon */
+    margin-bottom: 5px;
+    /* Margin bawah ikon untuk jarak antara ikon dan teks */
+    padding-bottom: 10px;
+}
+
+#logOrdersBtn:hover {
+    background-color: orange;
+    /* Warna latar belakang saat tombol dihover */
+}
+
+
+
+
+.order-method {
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 90%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#orderMethod {
+    padding: 8px 12px;
+    /* Padding di sekitar teks di dalam select */
+    font-size: 16px;
+    /* Ukuran font teks */
+    border: 1px solid orange;
+    /* Garis pinggiran dengan warna abu-abu */
+    border-radius: 4px;
+    /* Sudut sudut yang dibulatkan */
+}
+
+#order-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#order-form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    cursor: pointer;
+}
+
+#order-form select:hover {
+    border-color: #999;
+}
+
+#order-form select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+#outlet-info {
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 90%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#outlet-info label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#outlet-info select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    cursor: pointer;
+}
+
+#outlet-info select:hover {
+    border-color: #999;
+}
+
+#outlet-info select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+#order-cost {
+    margin-left: 4px;
+    text-align: left;
+}
