@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/confetti.css">
+
 
     <script src="https://kit.fontawesome.com/ea1fe42fd6.js" crossorigin="anonymous"></script>
 
@@ -37,7 +40,8 @@
         <script>
             flatpickr("#date", {
                 minDate: new Date().fp_incr(1), // Mendapatkan tanggal besok
-                dateFormat: "Y-m-d"
+                dateFormat: "Y-m-d",
+                disableMobile: "true"
             });
         </script>
 
