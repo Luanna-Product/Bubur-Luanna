@@ -14,33 +14,41 @@ var quantityNasiTim_half = params.get('nasitim_half');
 var quantityNasiTim_1 = params.get('nasitim_1');
 var quantitySup = params.get('sup');
 var quantityJusBuah = params.get('jusbuah');
-var quantityPaketBuburFrozen = params.get('paketbuburfrozen');
+var quantityPaketBuburFrozenKotak = params.get('paketbuburfrozenkotak');
 var quantityBuburFrozenCup = params.get('buburfrozencup');
 var quantityBuburFrozenKotak = params.get('buburfrozenkotak');
 
-document.getElementById('dateForm').addEventListener('submit', function(event) {
+document.getElementById('dateForm').addEventListener('submit', function (event)
+{
     event.preventDefault();
     var selectedDate = new Date(document.getElementById('date').value);
 
     // Mendapatkan tanggal hari ini
     var today = new Date();
 
-    // Menghitung tanggal minimal yang diperbolehkan (hari besok)
+    // Menghitung tanggal minimal yang diperbolehkan (hari ini atau setelahnya)
     var minDate = new Date(today);
-    minDate.setDate(today.getDate());
+    minDate.setDate(today.getDate()); // Mengatur tanggal minimal ke hari sebelumnya
 
-    // Memeriksa apakah tanggal yang dipilih oleh pengguna adalah minimal hari besok atau setelahnya
-    if (selectedDate >= minDate) {
+    // Memeriksa apakah tanggal yang dipilih oleh pengguna adalah minimal hari ini atau setelahnya
+    if (selectedDate > minDate)
+    {
         // Jika iya, lanjutkan dengan menampilkan menu
         displayMenus(selectedDate);
-        updateOrderMethodCost()
-    } else {
+        updateOrderMethodCost();
+    } else
+    {
         // Jika tidak, tampilkan pesan kesalahan
-        alert('Harap mengisi tanggal minimal esok hari');
+        alert('Harap pilih tanggal setelah hari ini');
     }
+
+    // Mengatur tanggal minimal untuk input tanggal
+
 });
 
-document.getElementById('logOrdersBtn').addEventListener('click', function() {
+
+document.getElementById('logOrdersBtn').addEventListener('click', function ()
+{
     var overallItems = document.querySelectorAll('.menu .quantity');
     var overallTotal = 0;
     var ordersByDay = {}; // Objek untuk menyimpan detail pesanan berdasarkan dayIndex
@@ -49,86 +57,110 @@ document.getElementById('logOrdersBtn').addEventListener('click', function() {
     var totalDaysWithOrders = 0;
 
     var authOrder = document.getElementById('orderMethod').value; // Mendapatkan nilai opsi yang dipilih
-    if(authOrder === '') {
+    var authOutletOption = document.getElementById('outletOption').value; // Mendapatkan nilai opsi yang dipilih
+    if (authOrder === '')
+    {
         alert('Harap memilih metode pemesanan terlebih dahulu');
-    }else {
-        //------------
-        overallItems.forEach(function(item) {
-            var quantity = parseInt(item.value);
-            if (quantity > 0) {
-                var dayIndex = item.closest('.menu').nextElementSibling.dataset.day;
-                var price = parseFloat(item.getAttribute('data-price'));
-                var totalPerItem = price * quantity;
-                overallTotal += totalPerItem;
-                // Menghitung tanggal untuk dayIndex saat ini
-                var currentDate = new Date(selectedDate);
-                currentDate.setDate(currentDate.getDate() + parseInt(dayIndex)); // Menambahkan jumlah hari sesuai dengan indeks hari
-                // Menambah detail pesanan ke objek ordersByDay
-                if (!ordersByDay[currentDate.getTime()]) {
-                    ordersByDay[currentDate.getTime()] = {
-                        date: currentDate,
-                        orders: []
-                    };
-                    totalDaysWithOrders++;
+    } else {
+        if(authOrder === 'outlet' && authOutletOption === '') {
+            alert('Harap memilih lokasi outlet terlebih dahulu');
+        } else {
+            overallItems.forEach(function (item) {
+                var quantity = parseInt(item.value);
+                if (quantity > 0)
+                {
+                    var dayIndex = item.closest('.menu').nextElementSibling.dataset.day;
+                    var price = parseFloat(item.getAttribute('data-price'));
+                    var totalPerItem = price * quantity;
+                    overallTotal += totalPerItem;
+                    // Menghitung tanggal untuk dayIndex saat ini
+                    var currentDate = new Date(selectedDate);
+                    currentDate.setDate(currentDate.getDate() + parseInt(dayIndex)); // Menambahkan jumlah hari sesuai dengan indeks hari
+                    // Menambah detail pesanan ke objek ordersByDay
+                    if (!ordersByDay[currentDate.getTime()])
+                    {
+                        ordersByDay[currentDate.getTime()] = {
+                            date: currentDate,
+                            orders: []
+                        };
+                        totalDaysWithOrders++;
+                    }
+                    var itemName = item.previousElementSibling.textContent.trim();
+                    var nameAndPrice = itemName.split(' - '); // Misalnya, jika nama dan harga dipisahkan oleh tanda hubung "-"
+                    var name = nameAndPrice[0]; // Bagian pertama adalah nama
+                    var price = nameAndPrice[1]; // Bagian kedua adalah harga
+    
+                    ordersByDay[currentDate.getTime()].orders.push({
+                        name: name,
+                        price: price,
+                        quantity: quantity,
+                        total: totalPerItem
+                    });
                 }
-                var itemName = item.previousElementSibling.textContent.trim();
-                var nameAndPrice = itemName.split(' - '); // Misalnya, jika nama dan harga dipisahkan oleh tanda hubung "-"
-                var name = nameAndPrice[0]; // Bagian pertama adalah nama
-                var price = nameAndPrice[1]; // Bagian kedua adalah harga
-                
-                ordersByDay[currentDate.getTime()].orders.push({
-                    name: name,
-                    price: price,
-                    quantity: quantity,
-                    total: totalPerItem
-                });
-            }
-        });
-    
-        // Membuat pesan yang berisi detail pesanan
-        Object.keys(ordersByDay).forEach(function(dayIndex) {
-            var currentDate = new Date(parseInt(dayIndex));
-            message += '➲ ' + currentDate.toLocaleDateString() + ':\n';
-            ordersByDay[dayIndex].orders.forEach(function(order) {
-                message += '    ✧' + order.name + '\n' + '          ' + order.quantity + ' x ' + order.price + ' = Rp' + order.total + '\n';
             });
-            message += '\n';
-        });
     
-        // Menambahkan total keseluruhan
-        message += '⚬ _*Total Produk ' + totalDaysWithOrders + ' Hari: Rp' + overallTotal + '*_' + '\n';
+            // Membuat pesan yang berisi detail pesanan
+            Object.keys(ordersByDay).forEach(function (dayIndex)
+            {
+                var currentDate = new Date(parseInt(dayIndex));
+                message += '➲ ' + currentDate.toLocaleDateString() + ':\n';
+                ordersByDay[dayIndex].orders.forEach(function (order)
+                {
+                    message += '    ✧' + order.name + '\n' + '          ' + order.quantity + ' x ' + order.price + ' = Rp' + order.total + '\n';
+                });
+                message += '\n';
+            });
     
-        var selectedMethod = document.getElementById('orderMethod').value; // Mendapatkan nilai opsi yang dipilih
+            // Menambahkan total keseluruhan
+            message += '⚬ _*Total Produk ' + totalDaysWithOrders + ' Hari: Rp' + overallTotal + '*_' + '\n';
     
-        // Menambahkan teks metode pemesanan ke dalam pesan
-        if (selectedMethod === 'outlet') {
-            message += '⚬ _*Metode pemesanan: Outlet*_\n';
-        } else if (selectedMethod === 'delivery') {
-            message += '⚬ _*Metode pemesanan: Delivery transfer*_\n';
-        } else if (selectedMethod === 'cod') {
-            message += '⚬ _*Metode pemesanan: Delivery COD*_\n';
-        } else {
-            message += '*Pilih metode pemesanan*\n';
+            var selectedMethod = document.getElementById('orderMethod').value; // Mendapatkan nilai opsi yang dipilih
+    
+            // Menambahkan teks metode pemesanan ke dalam pesan
+            if (selectedMethod === 'outlet')
+            {
+                message += '⚬ _*Metode pemesanan: Outlet*_\n';
+            } else if (selectedMethod === 'delivery')
+            {
+                message += '⚬ _*Metode pemesanan: Delivery transfer*_\n';
+            } else if (selectedMethod === 'cod')
+            {
+                message += '⚬ _*Metode pemesanan: Delivery COD*_\n';
+            } else
+            {
+                message += '*Pilih metode pemesanan*\n';
+            }
+
+            if(authOrder === 'outlet') {
+                if(authOutletOption === 'brosot') {
+                    message += '⚬ _*Lokasi outlet : Brosot*_\n';
+                } else if(authOutletOption === 'wates') {
+                    message += '⚬ _*Lokasi outlet : Wates*_\n';
+                }
+            }
+    
+            var orderMethodCost = updateOrderMethodCost();
+            // Menambahkan teks biaya metode pemesanan ke dalam pesan
+            message += '⚬ _*Ongkos Kirim: Rp' + orderMethodCost + '*_' + '\n';
+    
+            var finalMethodElement = document.getElementById('finalMethod');
+            if (finalMethodElement)
+            {
+                var totalAmountText = finalMethodElement.textContent.match(/Rp(\d+(\.\d+)*)/)[1];
+                message += '____________________________________\n'
+                message += '⚝ *Total: Rp' + totalAmountText + '* ⚝' + '\n'; // Menambahkan pesan dari finalMethodElement ke dalam pesan WhatsApp
+            } else
+            {
+                console.error("Elemen '#finalMethod' tidak ditemukan.");
+            }
+    
+            var encodedMessage = encodeURIComponent(message);
+            var phoneNumber = '+6281229982755'; // Nomor WhatsApp tujuan
+            var whatsappURL = 'https://wa.me/' + phoneNumber + '?text=' + encodedMessage;
+            window.open(whatsappURL, '_blank');
         }
-    
-        var orderMethodCost = updateOrderMethodCost();
-        // Menambahkan teks biaya metode pemesanan ke dalam pesan
-        message += '⚬ _*Ongkos Kirim: Rp' + orderMethodCost + '*_' + '\n';
-    
-        var finalMethodElement = document.getElementById('finalMethod');
-        if (finalMethodElement) {
-            var totalAmountText = finalMethodElement.textContent.match(/Rp(\d+(\.\d+)*)/)[1];
-            message += '_____________________________________\n'
-            message += '⚝ *Total: Rp' + totalAmountText + '* ⚝' + '\n'; // Menambahkan pesan dari finalMethodElement ke dalam pesan WhatsApp
-        } else {
-            console.error("Elemen '#finalMethod' tidak ditemukan.");
-        }
-    
-        var encodedMessage = encodeURIComponent(message);
-        var phoneNumber = '+6281229982755'; // Nomor WhatsApp tujuan
-        var whatsappURL = 'https://wa.me/' + phoneNumber + '?text=' + encodedMessage;
-        window.open(whatsappURL, '_blank');
     }
+
 });
 
 
@@ -139,14 +171,16 @@ document.getElementById('logOrdersBtn').addEventListener('click', function() {
 
 
 
-function displayMenus(selectedDate) {
+function displayMenus(selectedDate)
+{
     var menuSectionDiv = document.getElementById('menuSection');
     menuSectionDiv.innerHTML = ''; // Kosongkan konten sebelum menambahkan menu untuk 7 hari ke depan
 
     var totalOverall = 0; // Initialize overall total price
 
     // Perulangan untuk menampilkan menu untuk 7 hari ke depan
-    for (var i = 0; i < packet; i++) {
+    for (var i = 0; i < packet; i++)
+    {
         var currentDate = new Date(selectedDate.getTime()); // Salin tanggal yang dipilih
         currentDate.setDate(selectedDate.getDate() + i); // Tambahkan i hari ke tanggal yang dipilih
 
@@ -182,7 +216,8 @@ function displayMenus(selectedDate) {
         var menuItems = getMenuForDay(currentDate.getDay());
         var total = 0; // Initialize total price
 
-        menuItems.forEach(function(item) {
+        menuItems.forEach(function (item)
+        {
             var menuItemDiv = document.createElement('div');
             menuItemDiv.classList.add('menu-item');
             menuItemDiv.innerHTML = `
@@ -220,14 +255,18 @@ function displayMenus(selectedDate) {
     // Event listener for toggle button
     var toggleButtons = document.querySelectorAll('.toggle-button');
 
-    toggleButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
+    toggleButtons.forEach(function (button)
+    {
+        button.addEventListener('click', function ()
+        {
             var menuId = button.getAttribute('data-menu');
             var menu = document.querySelector('.' + menuId);
-            if (menu.style.display === 'none') {
+            if (menu.style.display === 'none')
+            {
                 menu.style.display = 'block'; // Show the menu
                 button.textContent = 'Sembunyikan'; // Ubah teks tombol menjadi 'Sembunyikan'
-            } else {
+            } else
+            {
                 menu.style.display = 'none'; // Hide the menu
                 button.textContent = 'Tampilkan'; // Ubah teks tombol menjadi 'Tampilkan'
             }
@@ -239,16 +278,20 @@ function displayMenus(selectedDate) {
 
 //------------------------------------------------------------------------------------------------------------
 
-function updateTotal(event) {
-    if (event.target.classList.contains('quantity')) {
+function updateTotal(event)
+{
+    if (event.target.classList.contains('quantity'))
+    {
         var menuDiv = event.target.closest('.menu');
         var totalDiv = menuDiv.nextElementSibling; // Select total div based on day index
 
         var total = 0;
         var items = menuDiv.querySelectorAll('.quantity');
-        items.forEach(function(item) {
+        items.forEach(function (item)
+        {
             var quantityValue = parseInt(item.value);
-            if (isNaN(quantityValue) || quantityValue < 0) {
+            if (isNaN(quantityValue) || quantityValue < 0)
+            {
                 quantityValue = 0; // Mengatasi kasus jika value adalah NaN atau negatif
             }
 
@@ -263,11 +306,13 @@ function updateTotal(event) {
     // Update overall total
     var overallTotal = 0;
     var overallItems = document.querySelectorAll('.menu .quantity');
-    overallItems.forEach(function(item) {
+    overallItems.forEach(function (item)
+    {
         var quantityValue = parseInt(item.value);
-            if (isNaN(quantityValue) || quantityValue < 0) {
-                quantityValue = 0; // Mengatasi kasus jika value adalah NaN atau negatif
-            }
+        if (isNaN(quantityValue) || quantityValue < 0)
+        {
+            quantityValue = 0; // Mengatasi kasus jika value adalah NaN atau negatif
+        }
         overallTotal += parseFloat(item.getAttribute('data-price')) * quantityValue;
     });
     document.querySelector('.overall-total').textContent = 'Total Seluruh Hari: Rp' + overallTotal;
@@ -276,7 +321,8 @@ function updateTotal(event) {
     updateOrderMethodCost();
 }
 
-function getMenuForDay(day) {
+function getMenuForDay(day)
+{
     // Define menu for each day
     var menus = [
         [ // Sunday (0)
@@ -288,12 +334,18 @@ function getMenuForDay(day) {
             { name: '1 Nasi tim sumsum sapi', price: 5000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup ikan dory', price: 8000, defaultQuantity: quantitySup },
             { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
-            { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
+
+            { name: 'Paket bubur frozen kotak (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozenKotak },
 
             { name: 'Bubur frozen cup', price: 5000, defaultQuantity: quantityBuburFrozenCup },
             { name: 'Bubur frozen kotak', price: 3000, defaultQuantity: quantityBuburFrozenKotak },
 
-            { name: 'Lauk frozen', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen tongseng ayam', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen ayam besengek', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen ayam rica-rica', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
+
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 60000, defaultQuantity: 0 },
@@ -316,12 +368,18 @@ function getMenuForDay(day) {
             { name: '1 Nasi tim ikan tuna', price: 5000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup ayam kampung', price: 8000, defaultQuantity: quantitySup },
             { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
-            { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
+
+            { name: 'Paket bubur frozen kotak (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozenKotak },
 
             { name: 'Bubur frozen cup', price: 5000, defaultQuantity: quantityBuburFrozenCup },
             { name: 'Bubur frozen kotak', price: 3000, defaultQuantity: quantityBuburFrozenKotak },
 
-            { name: 'Lauk frozen', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen tongseng ayam', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen ayam besengek', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen ayam rica-rica', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
+
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 60000, defaultQuantity: 0 },
@@ -344,12 +402,18 @@ function getMenuForDay(day) {
             { name: '1 Nasi tim daging sapi', price: 5000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup ikan salmon', price: 20000, defaultQuantity: quantitySup },
             { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
-            { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
+
+            { name: 'Paket bubur frozen kotak (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozenKotak },
 
             { name: 'Bubur frozen cup', price: 5000, defaultQuantity: quantityBuburFrozenCup },
             { name: 'Bubur frozen kotak', price: 3000, defaultQuantity: quantityBuburFrozenKotak },
 
-            { name: 'Lauk frozen', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen tongseng ayam', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen ayam besengek', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen ayam rica-rica', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
+
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 60000, defaultQuantity: 0 },
@@ -372,12 +436,18 @@ function getMenuForDay(day) {
             { name: '1 Nasi tim ikan salmon', price: 10000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup daging sapi', price: 8000, defaultQuantity: quantitySup },
             { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
-            { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
+
+            { name: 'Paket bubur frozen kotak (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozenKotak },
 
             { name: 'Bubur frozen cup', price: 5000, defaultQuantity: quantityBuburFrozenCup },
             { name: 'Bubur frozen kotak', price: 3000, defaultQuantity: quantityBuburFrozenKotak },
 
-            { name: 'Lauk frozen', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen tongseng ayam', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen ayam besengek', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen ayam rica-rica', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
+
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 60000, defaultQuantity: 0 },
@@ -400,12 +470,18 @@ function getMenuForDay(day) {
             { name: '1 Nasi tim ikan dory', price: 5000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup ikan kakap', price: 20000, defaultQuantity: quantitySup },
             { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
-            { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
+
+            { name: 'Paket bubur frozen kotak (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozenKotak },
 
             { name: 'Bubur frozen cup', price: 5000, defaultQuantity: quantityBuburFrozenCup },
             { name: 'Bubur frozen kotak', price: 3000, defaultQuantity: quantityBuburFrozenKotak },
 
-            { name: 'Lauk frozen', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen tongseng ayam', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen ayam besengek', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen ayam rica-rica', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
+
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 60000, defaultQuantity: 0 },
@@ -428,12 +504,18 @@ function getMenuForDay(day) {
             { name: '1 Nasi tim hati ayam kampung', price: 5000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup ikan dory', price: 8000, defaultQuantity: quantitySup },
             { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
-            { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
+
+            { name: 'Paket bubur frozen kotak (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozenKotak },
 
             { name: 'Bubur frozen cup', price: 5000, defaultQuantity: quantityBuburFrozenCup },
             { name: 'Bubur frozen kotak', price: 3000, defaultQuantity: quantityBuburFrozenKotak },
 
-            { name: 'Lauk frozen', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen tongseng ayam', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen ayam besengek', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen ayam rica-rica', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
+
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 60000, defaultQuantity: 0 },
@@ -456,12 +538,18 @@ function getMenuForDay(day) {
             { name: '1 Nasi tim ayam kampung', price: 5000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup daging sapi', price: 8000, defaultQuantity: quantitySup },
             { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
-            { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
+
+            { name: 'Paket bubur frozen kotak (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozenKotak },
 
             { name: 'Bubur frozen cup', price: 5000, defaultQuantity: quantityBuburFrozenCup },
             { name: 'Bubur frozen kotak', price: 3000, defaultQuantity: quantityBuburFrozenKotak },
 
-            { name: 'Lauk frozen', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen tongseng ayam', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen ayam besengek', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen ayam rica-rica', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
+
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 60000, defaultQuantity: 0 },
@@ -481,12 +569,14 @@ function getMenuForDay(day) {
     return menus[day];
 }
 
-function getDayName(day) {
+function getDayName(day)
+{
     var days = ['Ahad', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
     return days[day];
 }
 
-function getMonthName(month) {
+function getMonthName(month)
+{
     var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
     return months[month]
 }
@@ -494,13 +584,16 @@ function getMonthName(month) {
 //--------------------------------------------------------------------------------------------------------------------
 
 
-function getTotalDaysWithQuantity() {
+function getTotalDaysWithQuantity()
+{
     var overallItems = document.querySelectorAll('.menu .quantity');
     var daysWithQuantity = new Set();
 
-    overallItems.forEach(function(item) {
+    overallItems.forEach(function (item)
+    {
         var quantity = parseInt(item.value);
-        if (quantity > 0) {
+        if (quantity > 0)
+        {
             var dayIndex = item.closest('.menu').nextElementSibling.dataset.day;
             daysWithQuantity.add(dayIndex);
         }
@@ -509,17 +602,22 @@ function getTotalDaysWithQuantity() {
     return daysWithQuantity.size;
 }
 
-function calculateOrderMethodCost(totalDays) {
-    if (totalDays < 7) {
+function calculateOrderMethodCost(totalDays)
+{
+    if (totalDays < 7)
+    {
         return 2000 * totalDays;
-    } else if (totalDays < 30) {
+    } else if (totalDays < 30)
+    {
         return 1500 * totalDays;
-    } else {
+    } else
+    {
         return 1000 * totalDays;
     }
 }
 
-function displayOrderFee(selectedDate) {
+function displayOrderFee(selectedDate)
+{
     var orderSectionDiv = document.getElementById('orderMethod');
     var codOption = packet === '1' ? '<option value="cod">Delivery COD</option>' : '';
 
@@ -537,26 +635,33 @@ function displayOrderFee(selectedDate) {
 
 
 // Fungsi untuk menghitung biaya metode pemesanan
-function updateOrderMethodCost() {
+function updateOrderMethodCost()
+{
     var method = document.getElementById('orderMethod').value;
     var totalDays = getTotalDaysWithQuantity();
     var orderMethodCost = 0;
 
-    if (method === 'delivery' || method === 'cod') {
-        if (totalDays < 7) {
+    if (method === 'delivery' || method === 'cod')
+    {
+        if (totalDays < 7)
+        {
             orderMethodCost = 2000 * totalDays;
             document.getElementById('order-cost').textContent = 'Biaya Ongkir: Rp2000 x ' + totalDays + ' = Rp' + orderMethodCost;
-        } else if (totalDays < 30) {
+        } else if (totalDays < 30)
+        {
             orderMethodCost = 1500 * totalDays;
             document.getElementById('order-cost').textContent = 'Biaya Ongkir: Rp1500 x ' + totalDays + ' = Rp' + orderMethodCost;
-        } else {
+        } else
+        {
             orderMethodCost = 1000 * totalDays;
             document.getElementById('order-cost').textContent = 'Biaya Ongkir: Rp1000 x ' + totalDays + ' = Rp' + orderMethodCost;
         }
-    } else if (method === 'outlet') {
+    } else if (method === 'outlet')
+    {
         orderMethodCost = 0;
         document.getElementById('order-cost').textContent = 'Biaya Ongkir: Rp0 x ' + totalDays + ' = Rp' + orderMethodCost;
-    } else if (method === ''){
+    } else if (method === '')
+    {
         orderMethodCost = 0;
         document.getElementById('order-cost').textContent = 'Pilih metode pemesanan';
     }
@@ -569,32 +674,40 @@ function updateOrderMethodCost() {
 }
 
 // Panggil fungsi saat dokumen diinisialisasi
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function ()
+{
     displayOrderFee();
     var orderForm = document.getElementById('orderMethod');
-    if (orderForm) {
-        orderForm.addEventListener('change', function(event) {
+    if (orderForm)
+    {
+        orderForm.addEventListener('change', function (event)
+        {
             updateOrderMethodCost(); // Panggil fungsi untuk memperbarui biaya metode pemesanan saat terjadi perubahan dalam metode pemesanan
         });
 
         var quantityInputs = document.querySelectorAll('.menu .quantity');
-        quantityInputs.forEach(function(input) {
-            input.addEventListener('input', function() {
+        quantityInputs.forEach(function (input)
+        {
+            input.addEventListener('input', function ()
+            {
                 updateOrderMethodCost(); // Panggil fungsi untuk memperbarui biaya metode pemesanan saat terjadi perubahan dalam input kuantitas
             });
         });
-    } else {
+    } else
+    {
         console.error("Elemen dengan ID 'orderMethod' tidak ditemukan.");
     }
 });
 
-function calculateTotalAmount(finalTotal) {
+function calculateTotalAmount(finalTotal)
+{
     // Temukan elemen dengan kelas 'overall-total'
     var overallTotalElement = document.querySelector('.overall-total');
     var overallTotal = 0; // default value
 
     // Periksa apakah elemen ditemukan
-    if (overallTotalElement) {
+    if (overallTotalElement)
+    {
         // Ambil nilai 'textContent'
         var overallTotalText = overallTotalElement.textContent;
 
@@ -602,10 +715,12 @@ function calculateTotalAmount(finalTotal) {
         var overallTotalMatch = overallTotalText.match(/Rp(\d+(\.\d+)*)/);
 
         // cek apakah pola sesuai
-        if (overallTotalMatch && overallTotalMatch[1]) {
+        if (overallTotalMatch && overallTotalMatch[1])
+        {
             overallTotal = parseFloat(overallTotalMatch[1]);
         }
-    } else {
+    } else
+    {
         console.error("Elemen '.overall-total' tidak ditemukan.");
     }
 
@@ -617,9 +732,24 @@ function calculateTotalAmount(finalTotal) {
 
     // output nilai totalAmoun
     var finalMethodElement = document.getElementById('finalMethod');
-    if (finalMethodElement) {
+    if (finalMethodElement)
+    {
         finalMethodElement.textContent = "Total Biaya Pemesanan: Rp" + totalAmount;
-    } else {
+    } else
+    {
         console.error("Elemen '#finalMethod' tidak ditemukan.");
     }
 }
+
+var orderMethodSelect = document.getElementById('orderMethod');
+var outletInfoDiv = document.getElementById('outlet-info');
+var outletOptionSelect = document.getElementById('outletOption');
+
+orderMethodSelect.addEventListener('change', function() {
+    var selectedValue = this.value;
+    if (selectedValue === 'outlet') {
+        outletInfoDiv.style.display = 'block';
+    } else {
+        outletInfoDiv.style.display = 'none';
+    }
+});

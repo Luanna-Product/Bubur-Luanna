@@ -35,7 +35,9 @@ function saveQuantities() {
     quantityJusBuah = parseInt(document.getElementById('quantity-jusbuah').value) || 0;
     quantityPaketBuburFrozenKotak = parseInt(document.getElementById('quantity-paketbuburfrozenkotak').value) || 0;
     quantityBuburFrozenCup = parseInt(document.getElementById('quantity-buburfrozencup').value) || 0;
+    quantityBuburFrozenCupSalmon = parseInt(document.getElementById('quantity-buburfrozencupsalmon').value) || 0;
     quantityBuburFrozenKotak = parseInt(document.getElementById('quantity-buburfrozenkotak').value) || 0;
+    quantityBuburFrozenKotakSalmon = parseInt(document.getElementById('quantity-buburfrozenkotaksalmon').value) || 0;
 }
 
 // Memanggil fungsi saveQuantities setiap kali nilai input berubah
@@ -47,7 +49,7 @@ quantityInputs.forEach(input => {
 function logData() {
 
     // Membangun URL dengan parameter variabel
-    const url = `order.html?packet=${packet}&buburA_half=${quantityBuburA_half}&buburA_1=${quantityBuburA_1}&buburB_half=${quantityBuburB_half}&buburB_1=${quantityBuburB_1}&nasitim_half=${quantityNasiTim_half}&nasitim_1=${quantityNasiTim_1}&sup=${quantitySup}&jusbuah=${quantityJusBuah}&paketbuburfrozenkotak=${quantityPaketBuburFrozenKotak}&buburfrozencup=${quantityBuburFrozenCup}&buburfrozenkotak=${quantityBuburFrozenKotak}`;
+    const url = `order.html?packet=${packet}&buburA_half=${quantityBuburA_half}&buburA_1=${quantityBuburA_1}&buburB_half=${quantityBuburB_half}&buburB_1=${quantityBuburB_1}&nasitim_half=${quantityNasiTim_half}&nasitim_1=${quantityNasiTim_1}&sup=${quantitySup}&jusbuah=${quantityJusBuah}&paketbuburfrozenkotak=${quantityPaketBuburFrozenKotak}&buburfrozencup=${quantityBuburFrozenCup}&buburfrozencupsalmon=${quantityBuburFrozenCupSalmon}&buburfrozenkotak=${quantityBuburFrozenKotak}&buburfrozenkotaksalmon=${quantityBuburFrozenKotakSalmon}`;
 
     // Mengarahkan halaman ke URL yang dibangun
     window.location.href = url;

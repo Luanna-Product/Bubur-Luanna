@@ -16,7 +16,9 @@ var quantitySup = params.get('sup');
 var quantityJusBuah = params.get('jusbuah');
 var quantityPaketBuburFrozenKotak = params.get('paketbuburfrozenkotak');
 var quantityBuburFrozenCup = params.get('buburfrozencup');
+var quantityBuburFrozenCupSalmon = params.get('buburfrozencupsalmon');
 var quantityBuburFrozenKotak = params.get('buburfrozenkotak');
+var quantityBuburFrozenKotakSalmon = params.get('buburfrozenkotaksalmon');
 
 document.getElementById('dateForm').addEventListener('submit', function (event)
 {
@@ -39,7 +41,10 @@ document.getElementById('dateForm').addEventListener('submit', function (event)
     } else
     {
         // Jika tidak, tampilkan pesan kesalahan
-        alert('Harap pilih tanggal setelah hari ini');
+        var errorMessage = document.createElement('div');
+        errorMessage.className = 'custom-alert';
+        errorMessage.innerHTML = '<span class="close-btn" onclick="this.parentElement.style.display=\'none\'">&times;</span><p> -- Harap membuat pesanan paling cepat untuk esok hari --</p>';
+        document.body.appendChild(errorMessage);
     }
 
     // Mengatur tanggal minimal untuk input tanggal
@@ -60,12 +65,22 @@ document.getElementById('logOrdersBtn').addEventListener('click', function ()
     var authOutletOption = document.getElementById('outletOption').value; // Mendapatkan nilai opsi yang dipilih
     if (authOrder === '')
     {
-        alert('Harap memilih metode pemesanan terlebih dahulu');
-    } else {
-        if(authOrder === 'outlet' && authOutletOption === '') {
-            alert('Harap memilih lokasi outlet terlebih dahulu');
-        } else {
-            overallItems.forEach(function (item) {
+        var errorMessage = document.createElement('div');
+        errorMessage.className = 'custom-alert';
+        errorMessage.innerHTML = '<span class="close-btn" onclick="this.parentElement.style.display=\'none\'">&times;</span><p> -- Harap memilih metode pemesanan --</p>';
+        document.body.appendChild(errorMessage);
+    } else
+    {
+        if (authOrder === 'outlet' && authOutletOption === '')
+        {
+            var errorMessage = document.createElement('div');
+            errorMessage.className = 'custom-alert';
+            errorMessage.innerHTML = '<span class="close-btn" onclick="this.parentElement.style.display=\'none\'">&times;</span><p> -- Harap memilih lokasi outlet --</p>';
+            document.body.appendChild(errorMessage);
+        } else
+        {
+            overallItems.forEach(function (item)
+            {
                 var quantity = parseInt(item.value);
                 if (quantity > 0)
                 {
@@ -89,7 +104,7 @@ document.getElementById('logOrdersBtn').addEventListener('click', function ()
                     var nameAndPrice = itemName.split(' - '); // Misalnya, jika nama dan harga dipisahkan oleh tanda hubung "-"
                     var name = nameAndPrice[0]; // Bagian pertama adalah nama
                     var price = nameAndPrice[1]; // Bagian kedua adalah harga
-    
+
                     ordersByDay[currentDate.getTime()].orders.push({
                         name: name,
                         price: price,
@@ -98,7 +113,7 @@ document.getElementById('logOrdersBtn').addEventListener('click', function ()
                     });
                 }
             });
-    
+
             // Membuat pesan yang berisi detail pesanan
             Object.keys(ordersByDay).forEach(function (dayIndex)
             {
@@ -110,12 +125,12 @@ document.getElementById('logOrdersBtn').addEventListener('click', function ()
                 });
                 message += '\n';
             });
-    
+
             // Menambahkan total keseluruhan
             message += '⚬ _*Total Produk ' + totalDaysWithOrders + ' Hari: Rp' + overallTotal + '*_' + '\n';
-    
+
             var selectedMethod = document.getElementById('orderMethod').value; // Mendapatkan nilai opsi yang dipilih
-    
+
             // Menambahkan teks metode pemesanan ke dalam pesan
             if (selectedMethod === 'outlet')
             {
@@ -131,18 +146,21 @@ document.getElementById('logOrdersBtn').addEventListener('click', function ()
                 message += '*Pilih metode pemesanan*\n';
             }
 
-            if(authOrder === 'outlet') {
-                if(authOutletOption === 'brosot') {
+            if (authOrder === 'outlet')
+            {
+                if (authOutletOption === 'brosot')
+                {
                     message += '⚬ _*Lokasi outlet : Brosot*_\n';
-                } else if(authOutletOption === 'wates') {
+                } else if (authOutletOption === 'wates')
+                {
                     message += '⚬ _*Lokasi outlet : Wates*_\n';
                 }
             }
-    
+
             var orderMethodCost = updateOrderMethodCost();
             // Menambahkan teks biaya metode pemesanan ke dalam pesan
             message += '⚬ _*Ongkos Kirim: Rp' + orderMethodCost + '*_' + '\n';
-    
+
             var finalMethodElement = document.getElementById('finalMethod');
             if (finalMethodElement)
             {
@@ -153,9 +171,9 @@ document.getElementById('logOrdersBtn').addEventListener('click', function ()
             {
                 console.error("Elemen '#finalMethod' tidak ditemukan.");
             }
-    
+
             var encodedMessage = encodeURIComponent(message);
-            var phoneNumber = '+6281229982755'; // Nomor WhatsApp tujuan
+            var phoneNumber = '+6281215622101'; // Nomor WhatsApp tujuan
             var whatsappURL = 'https://wa.me/' + phoneNumber + '?text=' + encodedMessage;
             window.open(whatsappURL, '_blank');
         }
@@ -337,14 +355,21 @@ function getMenuForDay(day)
 
             { name: 'Paket bubur frozen kotak (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozenKotak },
 
-            { name: 'Bubur frozen cup', price: 5000, defaultQuantity: quantityBuburFrozenCup },
-            { name: 'Bubur frozen kotak', price: 3000, defaultQuantity: quantityBuburFrozenKotak },
+            { name: 'Bubur frozen cup 1 porsi', price: 5000, defaultQuantity: quantityBuburFrozenCup },
+            { name: 'Bubur frozen cup salmon 1 porsi', price: 5000, defaultQuantity: quantityBuburFrozenCupSalmon },
+            { name: 'Bubur frozen kotak 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozenKotak },
+            { name: 'Bubur frozen kotak salmon 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozenKotakSalmon },
 
-            { name: 'Lauk frozen tongseng ayam', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ayam besengek', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ayam rica-rica', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen tongseng ayam negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen ayam besengek negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen ayam rica-rica negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
+
+            { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
+            { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
+
+            { name: 'Kuah', price: 2000, defaultQuantity: 0 },
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
@@ -371,14 +396,21 @@ function getMenuForDay(day)
 
             { name: 'Paket bubur frozen kotak (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozenKotak },
 
-            { name: 'Bubur frozen cup', price: 5000, defaultQuantity: quantityBuburFrozenCup },
-            { name: 'Bubur frozen kotak', price: 3000, defaultQuantity: quantityBuburFrozenKotak },
+            { name: 'Bubur frozen cup 1 porsi', price: 5000, defaultQuantity: quantityBuburFrozenCup },
+            { name: 'Bubur frozen cup salmon 1 porsi', price: 5000, defaultQuantity: quantityBuburFrozenCupSalmon },
+            { name: 'Bubur frozen kotak 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozenKotak },
+            { name: 'Bubur frozen kotak salmon 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozenKotakSalmon },
 
-            { name: 'Lauk frozen tongseng ayam', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ayam besengek', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ayam rica-rica', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen tongseng ayam negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen ayam besengek negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen ayam rica-rica negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
+
+            { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
+            { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
+
+            { name: 'Kuah', price: 2000, defaultQuantity: 0 },
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
@@ -405,14 +437,21 @@ function getMenuForDay(day)
 
             { name: 'Paket bubur frozen kotak (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozenKotak },
 
-            { name: 'Bubur frozen cup', price: 5000, defaultQuantity: quantityBuburFrozenCup },
-            { name: 'Bubur frozen kotak', price: 3000, defaultQuantity: quantityBuburFrozenKotak },
+            { name: 'Bubur frozen cup 1 porsi', price: 5000, defaultQuantity: quantityBuburFrozenCup },
+            { name: 'Bubur frozen cup salmon 1 porsi', price: 5000, defaultQuantity: quantityBuburFrozenCupSalmon },
+            { name: 'Bubur frozen kotak 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozenKotak },
+            { name: 'Bubur frozen kotak salmon 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozenKotakSalmon },
 
-            { name: 'Lauk frozen tongseng ayam', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ayam besengek', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ayam rica-rica', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen tongseng ayam negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen ayam besengek negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen ayam rica-rica negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
+
+            { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
+            { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
+
+            { name: 'Kuah', price: 2000, defaultQuantity: 0 },
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
@@ -439,14 +478,21 @@ function getMenuForDay(day)
 
             { name: 'Paket bubur frozen kotak (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozenKotak },
 
-            { name: 'Bubur frozen cup', price: 5000, defaultQuantity: quantityBuburFrozenCup },
-            { name: 'Bubur frozen kotak', price: 3000, defaultQuantity: quantityBuburFrozenKotak },
+            { name: 'Bubur frozen cup 1 porsi', price: 5000, defaultQuantity: quantityBuburFrozenCup },
+            { name: 'Bubur frozen cup salmon 1 porsi', price: 5000, defaultQuantity: quantityBuburFrozenCupSalmon },
+            { name: 'Bubur frozen kotak 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozenKotak },
+            { name: 'Bubur frozen kotak salmon 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozenKotakSalmon },
 
-            { name: 'Lauk frozen tongseng ayam', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ayam besengek', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ayam rica-rica', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen tongseng ayam negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen ayam besengek negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen ayam rica-rica negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
+
+            { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
+            { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
+
+            { name: 'Kuah', price: 2000, defaultQuantity: 0 },
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
@@ -473,14 +519,21 @@ function getMenuForDay(day)
 
             { name: 'Paket bubur frozen kotak (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozenKotak },
 
-            { name: 'Bubur frozen cup', price: 5000, defaultQuantity: quantityBuburFrozenCup },
-            { name: 'Bubur frozen kotak', price: 3000, defaultQuantity: quantityBuburFrozenKotak },
+            { name: 'Bubur frozen cup 1 porsi', price: 5000, defaultQuantity: quantityBuburFrozenCup },
+            { name: 'Bubur frozen cup salmon 1 porsi', price: 5000, defaultQuantity: quantityBuburFrozenCupSalmon },
+            { name: 'Bubur frozen kotak 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozenKotak },
+            { name: 'Bubur frozen kotak salmon 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozenKotakSalmon },
 
-            { name: 'Lauk frozen tongseng ayam', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ayam besengek', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ayam rica-rica', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen tongseng ayam negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen ayam besengek negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen ayam rica-rica negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
+
+            { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
+            { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
+
+            { name: 'Kuah', price: 2000, defaultQuantity: 0 },
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
@@ -507,14 +560,21 @@ function getMenuForDay(day)
 
             { name: 'Paket bubur frozen kotak (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozenKotak },
 
-            { name: 'Bubur frozen cup', price: 5000, defaultQuantity: quantityBuburFrozenCup },
-            { name: 'Bubur frozen kotak', price: 3000, defaultQuantity: quantityBuburFrozenKotak },
+            { name: 'Bubur frozen cup 1 porsi', price: 5000, defaultQuantity: quantityBuburFrozenCup },
+            { name: 'Bubur frozen cup salmon 1 porsi', price: 5000, defaultQuantity: quantityBuburFrozenCupSalmon },
+            { name: 'Bubur frozen kotak 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozenKotak },
+            { name: 'Bubur frozen kotak salmon 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozenKotakSalmon },
 
-            { name: 'Lauk frozen tongseng ayam', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ayam besengek', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ayam rica-rica', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen tongseng ayam negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen ayam besengek negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen ayam rica-rica negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
+
+            { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
+            { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
+
+            { name: 'Kuah', price: 2000, defaultQuantity: 0 },
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
@@ -541,14 +601,21 @@ function getMenuForDay(day)
 
             { name: 'Paket bubur frozen kotak (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozenKotak },
 
-            { name: 'Bubur frozen cup', price: 5000, defaultQuantity: quantityBuburFrozenCup },
-            { name: 'Bubur frozen kotak', price: 3000, defaultQuantity: quantityBuburFrozenKotak },
+            { name: 'Bubur frozen cup 1 porsi', price: 5000, defaultQuantity: quantityBuburFrozenCup },
+            { name: 'Bubur frozen cup salmon 1 porsi', price: 5000, defaultQuantity: quantityBuburFrozenCupSalmon },
+            { name: 'Bubur frozen kotak 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozenKotak },
+            { name: 'Bubur frozen kotak salmon 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozenKotakSalmon },
 
-            { name: 'Lauk frozen tongseng ayam', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ayam besengek', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ayam rica-rica', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen tongseng ayam negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen ayam besengek negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen ayam rica-rica negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
+
+            { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
+            { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
+
+            { name: 'Kuah', price: 2000, defaultQuantity: 0 },
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
@@ -745,11 +812,14 @@ var orderMethodSelect = document.getElementById('orderMethod');
 var outletInfoDiv = document.getElementById('outlet-info');
 var outletOptionSelect = document.getElementById('outletOption');
 
-orderMethodSelect.addEventListener('change', function() {
+orderMethodSelect.addEventListener('change', function ()
+{
     var selectedValue = this.value;
-    if (selectedValue === 'outlet') {
+    if (selectedValue === 'outlet')
+    {
         outletInfoDiv.style.display = 'block';
-    } else {
+    } else
+    {
         outletInfoDiv.style.display = 'none';
     }
 });

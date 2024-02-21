@@ -25,8 +25,10 @@ main {
 }
 
 .menu-section {
-    border-top: 2px solid #ccc; /* Add border to separate date and menu */
-    padding-top: 0px; /* Add padding to create space */
+    border-top: 2px solid #ccc;
+    /* Add border to separate date and menu */
+    padding-top: 0px;
+    /* Add padding to create space */
 
     max-width: 90%;
     margin: 20px auto;
@@ -46,7 +48,8 @@ main {
 span {
     flex: 1;
     margin-right: 10px;
-    text-align: left; /* Align teks menu ke kiri */
+    text-align: left;
+    /* Align teks menu ke kiri */
 }
 
 input[type="number"] {
@@ -55,7 +58,8 @@ input[type="number"] {
     border-radius: 5px;
     border: 1px solid #ccc;
     text-align: center;
-    text-align: center; /* Align input ke kanan */
+    text-align: center;
+    /* Align input ke kanan */
 }
 
 button {
@@ -75,8 +79,9 @@ button {
     align-items: center;
 }
 
-.button {
-    display: flex; /* Add this line */
+.logbutton {
+    display: flex;
+    /* Add this line */
     justify-content: center;
     align-items: center;
     border-top: 2px solid #ccc;
@@ -89,4 +94,6 @@ button {
     box-shadow: 0 0 10px rgba(114, 255, 119, 0.1);
 }
 
-
+button {
+    cursor: pointer;
+}
