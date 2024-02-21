@@ -21,10 +21,13 @@ let quantitySup = 0;
 let quantityJusBuah = 0;
 let quantityPaketBuburFrozenKotak = 0;
 let quantityBuburFrozenCup = 0;
+let quantityBuburFrozenCupSalmon = 0;
 let quantityBuburFrozenKotak = 0;
+let quantityBuburFrozenKotakSalmon = 0;
 
 // Fungsi untuk menyimpan data input quantity ke dalam variabel
-function saveQuantities() {
+function saveQuantities()
+{
     quantityBuburA_half = parseInt(document.getElementById('quantity-buburA-half').value) || 0;
     quantityBuburA_1 = parseInt(document.getElementById('quantity-buburA-1').value) || 0;
     quantityBuburB_half = parseInt(document.getElementById('quantity-buburB-half').value) || 0;
@@ -41,12 +44,14 @@ function saveQuantities() {
 }
 
 // Memanggil fungsi saveQuantities setiap kali nilai input berubah
-quantityInputs.forEach(input => {
+quantityInputs.forEach(input =>
+{
     input.addEventListener('change', saveQuantities);
 });
 
 // Fungsi untuk melakukan log data ke konsol
-function logData() {
+function logData()
+{
 
     // Membangun URL dengan parameter variabel
     const url = `order.html?packet=${packet}&buburA_half=${quantityBuburA_half}&buburA_1=${quantityBuburA_1}&buburB_half=${quantityBuburB_half}&buburB_1=${quantityBuburB_1}&nasitim_half=${quantityNasiTim_half}&nasitim_1=${quantityNasiTim_1}&sup=${quantitySup}&jusbuah=${quantityJusBuah}&paketbuburfrozenkotak=${quantityPaketBuburFrozenKotak}&buburfrozencup=${quantityBuburFrozenCup}&buburfrozencupsalmon=${quantityBuburFrozenCupSalmon}&buburfrozenkotak=${quantityBuburFrozenKotak}&buburfrozenkotaksalmon=${quantityBuburFrozenKotakSalmon}`;
