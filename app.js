@@ -165,7 +165,7 @@ document.getElementById('logOrdersBtn').addEventListener('click', function ()
             if (finalMethodElement)
             {
                 var totalAmountText = finalMethodElement.textContent.match(/Rp(\d+(\.\d+)*)/)[1];
-                message += '____________________________________\n'
+                message += '________________________________\n'
                 message += '⚝ *Total: Rp' + totalAmountText + '* ⚝' + '\n'; // Menambahkan pesan dari finalMethodElement ke dalam pesan WhatsApp
             } else
             {
