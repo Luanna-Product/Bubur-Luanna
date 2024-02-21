@@ -8,15 +8,35 @@ body {
     padding: 3;
 }
 
-header {
-    background-color: #f2f2f2;
-    padding: 20px;
+.header {
+    margin-bottom: 20px;
     text-align: center;
+    max-width: 90%;
+    margin: 20px auto;
+    background-color: #deffe0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-header img {
-    height: 80px;
-    width: auto;
+.main-logo {
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 90%;
+    margin: 20px auto;
+    background-color: #fff7e6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 300px;
+    /* Ukuran logo yang diperbesar */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    /* Menengahkan logo */
 }
 
 main {
@@ -25,17 +45,15 @@ main {
 }
 
 .menu-section {
-    border-top: 2px solid #ccc;
-    /* Add border to separate date and menu */
-    padding-top: 0px;
-    /* Add padding to create space */
-
+    margin-bottom: 20px;
+    text-align: center;
     max-width: 90%;
-    margin: 20px auto;
+    margin: 0px auto;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(114, 255, 119, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
 }
 
 .menu-item {
@@ -49,6 +67,7 @@ span {
     flex: 1;
     margin-right: 10px;
     text-align: left;
+    font-size: 13px;
     /* Align teks menu ke kiri */
 }
 
@@ -77,6 +96,7 @@ button {
     position: relative;
     justify-content: center;
     align-items: center;
+    font-size: 15px;
 }
 
 .logbutton {
@@ -87,11 +107,22 @@ button {
     border-top: 2px solid #ccc;
     padding-top: 0px;
     max-width: 90%;
-    margin: 20px auto;
+    margin: 0px auto;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(114, 255, 119, 0.1);
+}
+
+.alert-section {
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 90%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 button {

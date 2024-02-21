@@ -2,6 +2,17 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.main-logo {
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 90%;
+    margin: 20px auto;
+    background-color: #fff7e6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
@@ -10,9 +21,14 @@ body {
 }
 
 .header {
-    max-width: 800px;
-    margin: 50px auto;
+    margin-bottom: 20px;
     text-align: center;
+    max-width: 90%;
+    margin: 20px auto;
+    background-color: #deffe0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -325,28 +341,30 @@ button:hover {
 }
 
 .custom-alert {
+    text-align: center;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 10px 40px 10px 10px;
-    /* Tambahkan padding ke sisi kanan agar tidak tertutup */
+    padding: 15px;
     background-color: #ffa500;
     /* Warna oren */
     color: #fff;
     /* Warna teks */
-    border-radius: 3px;
+    border-radius: 5px;
     z-index: 9999;
-    font-size: smaller;
+    border: 2px solid #b87333;
+    /* Border warna oren tua */
 }
 
 .close-btn {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: -10px;
+    /* Mengatur posisi tombol X di atas tengah kotak alert */
+    left: 50%;
+    transform: translateX(-50%);
     cursor: pointer;
     font-size: 20px;
-    /* Ukuran font diperbesar */
     color: #fff;
     /* Warna ikon penutup */
     z-index: 9999;
@@ -364,4 +382,9 @@ button:hover {
 .close-btn:hover {
     color: #b87333;
     /* Warna ikon penutup saat dihover */
+}
+
+.custom-alert i {
+    font-size: 50px;
+    padding-top: 30px;
 }

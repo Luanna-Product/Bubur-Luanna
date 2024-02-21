@@ -58,7 +58,7 @@ document.getElementById('dateForm').addEventListener('submit', function (event)
         // Jika tidak, tampilkan pesan kesalahan
         var errorMessage = document.createElement('div');
         errorMessage.className = 'custom-alert';
-        errorMessage.innerHTML = '<span class="close-btn" onclick="this.parentElement.style.display=\'none\'">&times;</span><p>Harap input tanggal paling cepat untuk esok hari</p>';
+        errorMessage.innerHTML = '<span class="close-btn" onclick="this.parentElement.style.display=\'none\'">&times;</span><i class="fas fa-exclamation-circle"></i><p>Harap input tanggal paling cepat untuk esok hari</p>';
         document.body.appendChild(errorMessage);
     }
 
@@ -82,7 +82,7 @@ document.getElementById('logOrdersBtn').addEventListener('click', function ()
     {
         var errorMessage = document.createElement('div');
         errorMessage.className = 'custom-alert';
-        errorMessage.innerHTML = '<span class="close-btn" onclick="this.parentElement.style.display=\'none\'">&times;</span><p>Harap memilih metode pemesanan</p>';
+        errorMessage.innerHTML = '<span class="close-btn" onclick="this.parentElement.style.display=\'none\'">&times;</span><i class="fa-solid fa-circle-exclamation"></i><p>Harap memilih metode pemesanan</p>';
         document.body.appendChild(errorMessage);
     } else
     {
@@ -90,7 +90,7 @@ document.getElementById('logOrdersBtn').addEventListener('click', function ()
         {
             var errorMessage = document.createElement('div');
             errorMessage.className = 'custom-alert';
-            errorMessage.innerHTML = '<span class="close-btn" onclick="this.parentElement.style.display=\'none\'">&times;</span><p>Harap memilih lokasi outlet</p>';
+            errorMessage.innerHTML = '<span class="close-btn" onclick="this.parentElement.style.display=\'none\'">&times;</span><i class="fa-solid fa-circle-exclamation"></i><p>Harap memilih lokasi outlet</p>';
             document.body.appendChild(errorMessage);
         } else
         {
@@ -219,7 +219,7 @@ function displayMenus(selectedDate)
 
         var dateInfoDiv = document.createElement('div');
         dateInfoDiv.textContent = getDayName(currentDate.getDay()) + ', ' + currentDate.getDate() + ' ' + getMonthName(currentDate.getMonth()) + ' ' + currentDate.getFullYear() + '\n'; // Menampilkan informasi tanggal
-        dateInfoDiv.style.backgroundColor = 'lightgreen'; // Set background color to light green
+        dateInfoDiv.style.backgroundColor = '#deffe0'; // Set background color to light green
         dateInfoDiv.style.width = '100%'; // Set width to 100% to fill the parent div
         dateInfoDiv.style.borderRadius = '10px';
         dateInfoDiv.style.padding = '5px';
@@ -254,7 +254,7 @@ function displayMenus(selectedDate)
             var menuItemDiv = document.createElement('div');
             menuItemDiv.classList.add('menu-item');
             menuItemDiv.innerHTML = `
-                <span>${item.name} - Rp ${item.price}</span>
+                <span>${item.name} - Rp${item.price}</span>
                 <input type="number" min="0" value="${item.defaultQuantity || 0}" class="quantity" data-price="${item.price}">
             `;
             menuDiv.appendChild(menuItemDiv);

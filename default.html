@@ -6,15 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pemesanan Luanna</title>
     <link rel="stylesheet" href="default-styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
     <link rel="icon" href="logo.png">
 </head>
 
 <body>
-    <header>
-        <img src="logo.png" alt="Logo">
+    <div class="main-logo">
+        <img class="logo" src="logo.png" alt="Logo">
+    </div>
+
+    <div class="header">
         <h2>Order here!</h2>
-        <p>Bunda mau pesan menu apa saja?</p>
-    </header>
+        <h4>Bunda mau pesan menu apa saja?</h4>
+    </div>
+
     <main>
         <div class="menu-section">
             <div class="menu-item">
@@ -87,10 +93,10 @@
                 <input type="number" min="0" value="0" class="quantity" id="quantity-buburfrozenkotaksalmon">
             </div>
         </div>
-        <div class="menu-section">
-            <h3>Untuk melihat produk lain klik tombol hijau di bawah</h3>
-        </div>
     </main>
+    <div class="alert-section">
+        <h3>Untuk melihat produk lain klik tombol hijau di bawah</h3>
+    </div>
     <div class="logbutton">
         <button id="logButton">Lanjut Melihat Detail Pesanan</button> <!-- Tombol untuk melakukan log -->
     </div>
