@@ -50,9 +50,7 @@ quantityInputs.forEach(input =>
 });
 
 // Fungsi untuk melakukan log data ke konsol
-function logData()
-{
-
+function logData() {
     // Membangun URL dengan parameter variabel
     const url = `order.html?packet=${packet}&buburA_half=${quantityBuburA_half}&buburA_1=${quantityBuburA_1}&buburB_half=${quantityBuburB_half}&buburB_1=${quantityBuburB_1}&nasitim_half=${quantityNasiTim_half}&nasitim_1=${quantityNasiTim_1}&sup=${quantitySup}&jusbuah=${quantityJusBuah}&paketbuburfrozenkotak=${quantityPaketBuburFrozenKotak}&buburfrozencup=${quantityBuburFrozenCup}&buburfrozencupsalmon=${quantityBuburFrozenCupSalmon}&buburfrozenkotak=${quantityBuburFrozenKotak}&buburfrozenkotaksalmon=${quantityBuburFrozenKotakSalmon}`;
 

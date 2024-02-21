@@ -4,21 +4,36 @@ var queryString = window.location.search;
 // Parse query string menjadi objek JavaScript
 var params = new URLSearchParams(queryString);
 
+var packet = 0;
+var quantityBuburA_half = 0;
+var quantityBuburA_1 = 0;
+var quantityBuburB_half = 0;
+var quantityBuburB_1 = 0;
+var quantityNasiTim_half = 0;
+var quantityNasiTim_1 = 0;
+var quantitySup = 0;
+var quantityJusBuah = 0;
+var quantityPaketBuburFrozenKotak = 0;
+var quantityBuburFrozenCup = 0;
+var quantityBuburFrozenCupSalmon = 0;
+var quantityBuburFrozenKotak = 0;
+var quantityBuburFrozenKotakSalmon = 0;
+
 // Mendapatkan nilai variabel var
-var packet = params.get('packet');
-var quantityBuburA_half = params.get('buburA_half');
-var quantityBuburA_1 = params.get('buburA_1');
-var quantityBuburB_half = params.get('buburB_half');
-var quantityBuburB_1 = params.get('buburB_1');
-var quantityNasiTim_half = params.get('nasitim_half');
-var quantityNasiTim_1 = params.get('nasitim_1');
-var quantitySup = params.get('sup');
-var quantityJusBuah = params.get('jusbuah');
-var quantityPaketBuburFrozenKotak = params.get('paketbuburfrozenkotak');
-var quantityBuburFrozenCup = params.get('buburfrozencup');
-var quantityBuburFrozenCupSalmon = params.get('buburfrozencupsalmon');
-var quantityBuburFrozenKotak = params.get('buburfrozenkotak');
-var quantityBuburFrozenKotakSalmon = params.get('buburfrozenkotaksalmon');
+packet = params.get('packet');
+quantityBuburA_half = params.get('buburA_half');
+quantityBuburA_1 = params.get('buburA_1');
+quantityBuburB_half = params.get('buburB_half');
+quantityBuburB_1 = params.get('buburB_1');
+quantityNasiTim_half = params.get('nasitim_half');
+quantityNasiTim_1 = params.get('nasitim_1');
+quantitySup = params.get('sup');
+quantityJusBuah = params.get('jusbuah');
+quantityPaketBuburFrozenKotak = params.get('paketbuburfrozenkotak');
+quantityBuburFrozenCup = params.get('buburfrozencup');
+quantityBuburFrozenCupSalmon = params.get('buburfrozencupsalmon');
+quantityBuburFrozenKotak = params.get('buburfrozenkotak');
+quantityBuburFrozenKotakSalmon = params.get('buburfrozenkotaksalmon');
 
 document.getElementById('dateForm').addEventListener('submit', function (event)
 {
@@ -43,7 +58,7 @@ document.getElementById('dateForm').addEventListener('submit', function (event)
         // Jika tidak, tampilkan pesan kesalahan
         var errorMessage = document.createElement('div');
         errorMessage.className = 'custom-alert';
-        errorMessage.innerHTML = '<span class="close-btn" onclick="this.parentElement.style.display=\'none\'">&times;</span><p> -- Harap membuat pesanan paling cepat untuk esok hari --</p>';
+        errorMessage.innerHTML = '<span class="close-btn" onclick="this.parentElement.style.display=\'none\'">&times;</span><p>Harap input tanggal paling cepat untuk esok hari</p>';
         document.body.appendChild(errorMessage);
     }
 
@@ -67,7 +82,7 @@ document.getElementById('logOrdersBtn').addEventListener('click', function ()
     {
         var errorMessage = document.createElement('div');
         errorMessage.className = 'custom-alert';
-        errorMessage.innerHTML = '<span class="close-btn" onclick="this.parentElement.style.display=\'none\'">&times;</span><p> -- Harap memilih metode pemesanan --</p>';
+        errorMessage.innerHTML = '<span class="close-btn" onclick="this.parentElement.style.display=\'none\'">&times;</span><p>Harap memilih metode pemesanan</p>';
         document.body.appendChild(errorMessage);
     } else
     {
@@ -75,7 +90,7 @@ document.getElementById('logOrdersBtn').addEventListener('click', function ()
         {
             var errorMessage = document.createElement('div');
             errorMessage.className = 'custom-alert';
-            errorMessage.innerHTML = '<span class="close-btn" onclick="this.parentElement.style.display=\'none\'">&times;</span><p> -- Harap memilih lokasi outlet --</p>';
+            errorMessage.innerHTML = '<span class="close-btn" onclick="this.parentElement.style.display=\'none\'">&times;</span><p>Harap memilih lokasi outlet</p>';
             document.body.appendChild(errorMessage);
         } else
         {
@@ -165,7 +180,7 @@ document.getElementById('logOrdersBtn').addEventListener('click', function ()
             if (finalMethodElement)
             {
                 var totalAmountText = finalMethodElement.textContent.match(/Rp(\d+(\.\d+)*)/)[1];
-                message += '________________________________\n'
+                message += '____________________________________\n'
                 message += '⚝ *Total: Rp' + totalAmountText + '* ⚝' + '\n'; // Menambahkan pesan dari finalMethodElement ke dalam pesan WhatsApp
             } else
             {
