@@ -376,8 +376,8 @@ function getMenuForDay(day)
             { name: 'Bubur frozen kotak salmon 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozenKotakSalmon },
 
             { name: 'Lauk frozen tongseng ayam negeri', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ayam besengek negeri', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ayam rica-rica negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen rica-rica ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
 
@@ -393,11 +393,12 @@ function getMenuForDay(day)
             { name: 'Ikan shisamo premium', price: 75000, defaultQuantity: 0 },
             { name: 'Daging Giling 5 butir', price: 15000, defaultQuantity: 0 },
             { name: 'Ayam Kampung Giling 5 butir', price: 15000, defaultQuantity: 0 },
-            { name: 'Hati Ayam Kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             { name: 'Ayam Kampung Utuh', price: 55000, defaultQuantity: 0 },
             { name: 'Ikan shisamo premium', price: 75000, defaultQuantity: 0 },
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
+
+            { name: 'Saringan', price: 10000, defaultQuantity: 0 },
         ],
         [ // Monday (1)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ikan tuna + tomat', price: 2500, defaultQuantity: quantityBuburA_half },
@@ -417,8 +418,8 @@ function getMenuForDay(day)
             { name: 'Bubur frozen kotak salmon 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozenKotakSalmon },
 
             { name: 'Lauk frozen tongseng ayam negeri', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ayam besengek negeri', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ayam rica-rica negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen rica-rica ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
 
@@ -434,11 +435,12 @@ function getMenuForDay(day)
             { name: 'Ikan shisamo premium', price: 75000, defaultQuantity: 0 },
             { name: 'Daging Giling 5 butir', price: 15000, defaultQuantity: 0 },
             { name: 'Ayam Kampung Giling 5 butir', price: 15000, defaultQuantity: 0 },
-            { name: 'Hati Ayam Kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             { name: 'Ayam Kampung Utuh', price: 55000, defaultQuantity: 0 },
             { name: 'Ikan shisamo premium', price: 75000, defaultQuantity: 0 },
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
+
+            { name: 'Saringan', price: 10000, defaultQuantity: 0 },
         ],
         [ // Tuesday (2)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur beras merah + hati ayam kampung + kacang merah', price: 2500, defaultQuantity: quantityBuburA_half },
@@ -458,8 +460,8 @@ function getMenuForDay(day)
             { name: 'Bubur frozen kotak salmon 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozenKotakSalmon },
 
             { name: 'Lauk frozen tongseng ayam negeri', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ayam besengek negeri', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ayam rica-rica negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen rica-rica ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
 
@@ -475,11 +477,12 @@ function getMenuForDay(day)
             { name: 'Ikan shisamo premium', price: 75000, defaultQuantity: 0 },
             { name: 'Daging Giling 5 butir', price: 15000, defaultQuantity: 0 },
             { name: 'Ayam Kampung Giling 5 butir', price: 15000, defaultQuantity: 0 },
-            { name: 'Hati Ayam Kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             { name: 'Ayam Kampung Utuh', price: 55000, defaultQuantity: 0 },
             { name: 'Ikan shisamo premium', price: 75000, defaultQuantity: 0 },
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
+
+            { name: 'Saringan', price: 10000, defaultQuantity: 0 },
         ],
         [ // Wednesday (3) Rabu
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ayam kampung + wortel', price: 2500, defaultQuantity: quantityBuburA_half },
@@ -499,8 +502,8 @@ function getMenuForDay(day)
             { name: 'Bubur frozen kotak salmon 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozenKotakSalmon },
 
             { name: 'Lauk frozen tongseng ayam negeri', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ayam besengek negeri', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ayam rica-rica negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen rica-rica ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
 
@@ -516,11 +519,12 @@ function getMenuForDay(day)
             { name: 'Ikan shisamo premium', price: 75000, defaultQuantity: 0 },
             { name: 'Daging Giling 5 butir', price: 15000, defaultQuantity: 0 },
             { name: 'Ayam Kampung Giling 5 butir', price: 15000, defaultQuantity: 0 },
-            { name: 'Hati Ayam Kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             { name: 'Ayam Kampung Utuh', price: 55000, defaultQuantity: 0 },
             { name: 'Ikan shisamo premium', price: 75000, defaultQuantity: 0 },
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
+
+            { name: 'Saringan', price: 10000, defaultQuantity: 0 },
         ],
         [ // Thursday (4)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ikan dory + tomat', price: 2500, defaultQuantity: quantityBuburB_half },
@@ -540,8 +544,8 @@ function getMenuForDay(day)
             { name: 'Bubur frozen kotak salmon 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozenKotakSalmon },
 
             { name: 'Lauk frozen tongseng ayam negeri', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ayam besengek negeri', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ayam rica-rica negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen rica-rica ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
 
@@ -557,11 +561,12 @@ function getMenuForDay(day)
             { name: 'Ikan shisamo premium', price: 75000, defaultQuantity: 0 },
             { name: 'Daging Giling 5 butir', price: 15000, defaultQuantity: 0 },
             { name: 'Ayam Kampung Giling 5 butir', price: 15000, defaultQuantity: 0 },
-            { name: 'Hati Ayam Kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             { name: 'Ayam Kampung Utuh', price: 55000, defaultQuantity: 0 },
             { name: 'Ikan shisamo premium', price: 75000, defaultQuantity: 0 },
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
+
+            { name: 'Saringan', price: 10000, defaultQuantity: 0 },
         ],
         [ // Friday (5)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur beras hitam + hati ayam kampung + kacang merah', price: 2500, defaultQuantity: quantityBuburA_half },
@@ -581,8 +586,8 @@ function getMenuForDay(day)
             { name: 'Bubur frozen kotak salmon 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozenKotakSalmon },
 
             { name: 'Lauk frozen tongseng ayam negeri', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ayam besengek negeri', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ayam rica-rica negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen rica-rica ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
 
@@ -598,11 +603,12 @@ function getMenuForDay(day)
             { name: 'Ikan shisamo premium', price: 75000, defaultQuantity: 0 },
             { name: 'Daging Giling 5 butir', price: 15000, defaultQuantity: 0 },
             { name: 'Ayam Kampung Giling 5 butir', price: 15000, defaultQuantity: 0 },
-            { name: 'Hati Ayam Kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             { name: 'Ayam Kampung Utuh', price: 55000, defaultQuantity: 0 },
             { name: 'Ikan shisamo premium', price: 75000, defaultQuantity: 0 },
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
+
+            { name: 'Saringan', price: 10000, defaultQuantity: 0 },
         ],
         [ // Saturday (6)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ikan salmon + tomat', price: 5000, defaultQuantity: quantityBuburA_half },
@@ -622,8 +628,8 @@ function getMenuForDay(day)
             { name: 'Bubur frozen kotak salmon 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozenKotakSalmon },
 
             { name: 'Lauk frozen tongseng ayam negeri', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ayam besengek negeri', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ayam rica-rica negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen rica-rica ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
 
@@ -639,11 +645,12 @@ function getMenuForDay(day)
             { name: 'Ikan shisamo premium', price: 75000, defaultQuantity: 0 },
             { name: 'Daging Giling 5 butir', price: 15000, defaultQuantity: 0 },
             { name: 'Ayam Kampung Giling 5 butir', price: 15000, defaultQuantity: 0 },
-            { name: 'Hati Ayam Kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             { name: 'Ayam Kampung Utuh', price: 55000, defaultQuantity: 0 },
             { name: 'Ikan shisamo premium', price: 75000, defaultQuantity: 0 },
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
+
+            { name: 'Saringan', price: 10000, defaultQuantity: 0 },
         ]
     ];
 
