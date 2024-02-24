@@ -166,6 +166,10 @@ button:hover {
     font-size: 13px;
 }
 
+.menu-item span {
+    margin-right: 10px;
+}
+
 .menu-item:last-child {
     border-bottom: none;
 }

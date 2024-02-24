@@ -35,6 +35,8 @@ quantityBuburFrozenCupSalmon = params.get('buburfrozencupsalmon');
 quantityBuburFrozenKotak = params.get('buburfrozenkotak');
 quantityBuburFrozenKotakSalmon = params.get('buburfrozenkotaksalmon');
 
+var confirm = 0;
+
 document.getElementById('dateForm').addEventListener('submit', function (event)
 {
     event.preventDefault();
@@ -51,6 +53,7 @@ document.getElementById('dateForm').addEventListener('submit', function (event)
     if (selectedDate > minDate)
     {
         // Jika iya, lanjutkan dengan menampilkan menu
+        confirm++;
         displayMenus(selectedDate);
         updateOrderMethodCost();
     } else
@@ -58,142 +61,151 @@ document.getElementById('dateForm').addEventListener('submit', function (event)
         // Jika tidak, tampilkan pesan kesalahan
         var errorMessage = document.createElement('div');
         errorMessage.className = 'custom-alert';
-        errorMessage.innerHTML = '<span class="close-btn" onclick="this.parentElement.style.display=\'none\'">&times;</span><i class="fas fa-exclamation-circle"></i><p>Harap input tanggal paling cepat untuk esok hari</p>';
+        errorMessage.innerHTML = '<span class="close-btn" onclick="this.parentElement.style.display=\'none\'">&times;</span><i class="fas fa-exclamation-circle"></i><p>Harap masukkan tanggal pemesanan</p>';
         document.body.appendChild(errorMessage);
     }
 
-    // Mengatur tanggal minimal untuk input tanggal
 
 });
 
 
 document.getElementById('logOrdersBtn').addEventListener('click', function ()
 {
-    var overallItems = document.querySelectorAll('.menu .quantity');
-    var overallTotal = 0;
-    var ordersByDay = {}; // Objek untuk menyimpan detail pesanan berdasarkan dayIndex
-    var selectedDate = new Date(document.getElementById('date').value); // Mengambil tanggal yang dipilih oleh pengguna
-    var message = ''; // Variabel untuk menyimpan pesan yang akan dikirim
-    var totalDaysWithOrders = 0;
-
-    var authOrder = document.getElementById('orderMethod').value; // Mendapatkan nilai opsi yang dipilih
-    var authOutletOption = document.getElementById('outletOption').value; // Mendapatkan nilai opsi yang dipilih
-    if (authOrder === '')
+    var selectedDateInitial = document.getElementById('date').value;
+    if ((selectedDateInitial === "" || isNaN(new Date(selectedDateInitial).getTime())) || confirm == 0)
     {
+        // Jika kosong atau tidak valid, tampilkan pesan kesalahan
         var errorMessage = document.createElement('div');
         errorMessage.className = 'custom-alert';
-        errorMessage.innerHTML = '<span class="close-btn" onclick="this.parentElement.style.display=\'none\'">&times;</span><i class="fa-solid fa-circle-exclamation"></i><p>Harap memilih metode pemesanan</p>';
+        errorMessage.innerHTML = '<span class="close-btn" onclick="this.parentElement.style.display=\'none\'">&times;</span><i class="fas fa-exclamation-circle"></i><p>Harap masukkan tanggal pemesanan dan klik confirm</p>';
         document.body.appendChild(errorMessage);
     } else
     {
-        if (authOrder === 'outlet' && authOutletOption === '')
+        var overallItems = document.querySelectorAll('.menu .quantity');
+        var overallTotal = 0;
+        var ordersByDay = {}; // Objek untuk menyimpan detail pesanan berdasarkan dayIndex
+        var selectedDate = new Date(document.getElementById('date').value); // Mengambil tanggal yang dipilih oleh pengguna
+        var message = ''; // Variabel untuk menyimpan pesan yang akan dikirim
+        var totalDaysWithOrders = 0;
+
+        var authOrder = document.getElementById('orderMethod').value; // Mendapatkan nilai opsi yang dipilih
+        var authOutletOption = document.getElementById('outletOption').value; // Mendapatkan nilai opsi yang dipilih
+        if (authOrder === '')
         {
             var errorMessage = document.createElement('div');
             errorMessage.className = 'custom-alert';
-            errorMessage.innerHTML = '<span class="close-btn" onclick="this.parentElement.style.display=\'none\'">&times;</span><i class="fa-solid fa-circle-exclamation"></i><p>Harap memilih lokasi outlet</p>';
+            errorMessage.innerHTML = '<span class="close-btn" onclick="this.parentElement.style.display=\'none\'">&times;</span><i class="fa-solid fa-circle-exclamation"></i><p>Harap memilih metode pemesanan</p>';
             document.body.appendChild(errorMessage);
         } else
         {
-            overallItems.forEach(function (item)
+            if (authOrder === 'outlet' && authOutletOption === '')
             {
-                var quantity = parseInt(item.value);
-                if (quantity > 0)
+                var errorMessage = document.createElement('div');
+                errorMessage.className = 'custom-alert';
+                errorMessage.innerHTML = '<span class="close-btn" onclick="this.parentElement.style.display=\'none\'">&times;</span><i class="fa-solid fa-circle-exclamation"></i><p>Harap memilih lokasi outlet</p>';
+                document.body.appendChild(errorMessage);
+            } else
+            {
+                overallItems.forEach(function (item)
                 {
-                    var dayIndex = item.closest('.menu').nextElementSibling.dataset.day;
-                    var price = parseFloat(item.getAttribute('data-price'));
-                    var totalPerItem = price * quantity;
-                    overallTotal += totalPerItem;
-                    // Menghitung tanggal untuk dayIndex saat ini
-                    var currentDate = new Date(selectedDate);
-                    currentDate.setDate(currentDate.getDate() + parseInt(dayIndex)); // Menambahkan jumlah hari sesuai dengan indeks hari
-                    // Menambah detail pesanan ke objek ordersByDay
-                    if (!ordersByDay[currentDate.getTime()])
+                    var quantity = parseInt(item.value);
+                    if (quantity > 0)
                     {
-                        ordersByDay[currentDate.getTime()] = {
-                            date: currentDate,
-                            orders: []
-                        };
-                        totalDaysWithOrders++;
+                        var dayIndex = item.closest('.menu').nextElementSibling.dataset.day;
+                        var price = parseFloat(item.getAttribute('data-price'));
+                        var totalPerItem = price * quantity;
+                        overallTotal += totalPerItem;
+                        // Menghitung tanggal untuk dayIndex saat ini
+                        var currentDate = new Date(selectedDate);
+                        currentDate.setDate(currentDate.getDate() + parseInt(dayIndex)); // Menambahkan jumlah hari sesuai dengan indeks hari
+                        // Menambah detail pesanan ke objek ordersByDay
+                        if (!ordersByDay[currentDate.getTime()])
+                        {
+                            ordersByDay[currentDate.getTime()] = {
+                                date: currentDate,
+                                orders: []
+                            };
+                            totalDaysWithOrders++;
+                        }
+                        var itemName = item.previousElementSibling.textContent.trim();
+                        var nameAndPrice = itemName.split(' - '); // Misalnya, jika nama dan harga dipisahkan oleh tanda hubung "-"
+                        var name = nameAndPrice[0]; // Bagian pertama adalah nama
+                        var price = nameAndPrice[1]; // Bagian kedua adalah harga
+
+                        ordersByDay[currentDate.getTime()].orders.push({
+                            name: name,
+                            price: price,
+                            quantity: quantity,
+                            total: totalPerItem
+                        });
                     }
-                    var itemName = item.previousElementSibling.textContent.trim();
-                    var nameAndPrice = itemName.split(' - '); // Misalnya, jika nama dan harga dipisahkan oleh tanda hubung "-"
-                    var name = nameAndPrice[0]; // Bagian pertama adalah nama
-                    var price = nameAndPrice[1]; // Bagian kedua adalah harga
-
-                    ordersByDay[currentDate.getTime()].orders.push({
-                        name: name,
-                        price: price,
-                        quantity: quantity,
-                        total: totalPerItem
-                    });
-                }
-            });
-
-            // Membuat pesan yang berisi detail pesanan
-            Object.keys(ordersByDay).forEach(function (dayIndex)
-            {
-                var currentDate = new Date(parseInt(dayIndex));
-                message += '➲ ' + currentDate.toLocaleDateString() + ':\n';
-                ordersByDay[dayIndex].orders.forEach(function (order)
-                {
-                    message += '    ✧' + order.name + '\n' + '          ' + order.quantity + ' x ' + order.price + ' = Rp' + order.total + '\n';
                 });
-                message += '\n';
-            });
 
-            // Menambahkan total keseluruhan
-            message += '⚬ _*Total Produk ' + totalDaysWithOrders + ' Hari: Rp' + overallTotal + '*_' + '\n';
-
-            var selectedMethod = document.getElementById('orderMethod').value; // Mendapatkan nilai opsi yang dipilih
-
-            // Menambahkan teks metode pemesanan ke dalam pesan
-            if (selectedMethod === 'outlet')
-            {
-                message += '⚬ _*Metode pemesanan: Outlet*_\n';
-            } else if (selectedMethod === 'delivery')
-            {
-                message += '⚬ _*Metode pemesanan: Delivery transfer*_\n';
-            } else if (selectedMethod === 'cod')
-            {
-                message += '⚬ _*Metode pemesanan: Delivery COD*_\n';
-            } else
-            {
-                message += '*Pilih metode pemesanan*\n';
-            }
-
-            if (authOrder === 'outlet')
-            {
-                if (authOutletOption === 'brosot')
+                // Membuat pesan yang berisi detail pesanan
+                Object.keys(ordersByDay).forEach(function (dayIndex)
                 {
-                    message += '⚬ _*Lokasi outlet : Brosot*_\n';
-                } else if (authOutletOption === 'wates')
+                    var currentDate = new Date(parseInt(dayIndex));
+                    message += '➲ ' + currentDate.toLocaleDateString() + ':\n';
+                    ordersByDay[dayIndex].orders.forEach(function (order)
+                    {
+                        message += '    ✧' + order.name + '\n' + '          ' + order.quantity + ' x ' + order.price + ' = Rp' + order.total + '\n';
+                    });
+                    message += '\n';
+                });
+
+                // Menambahkan total keseluruhan
+                message += '⚬ _*Total Produk ' + totalDaysWithOrders + ' Hari: Rp' + overallTotal + '*_' + '\n';
+
+                var selectedMethod = document.getElementById('orderMethod').value; // Mendapatkan nilai opsi yang dipilih
+
+                // Menambahkan teks metode pemesanan ke dalam pesan
+                if (selectedMethod === 'outlet')
                 {
-                    message += '⚬ _*Lokasi outlet : Wates*_\n';
+                    message += '⚬ _*Metode pemesanan: Outlet*_\n';
+                } else if (selectedMethod === 'delivery')
+                {
+                    message += '⚬ _*Metode pemesanan: Delivery transfer*_\n';
+                } else if (selectedMethod === 'cod')
+                {
+                    message += '⚬ _*Metode pemesanan: Delivery COD*_\n';
+                } else
+                {
+                    message += '*Pilih metode pemesanan*\n';
                 }
+
+                if (authOrder === 'outlet')
+                {
+                    if (authOutletOption === 'brosot')
+                    {
+                        message += '⚬ _*Lokasi outlet : Brosot*_\n';
+                    } else if (authOutletOption === 'wates')
+                    {
+                        message += '⚬ _*Lokasi outlet : Wates*_\n';
+                    }
+                }
+
+                var orderMethodCost = updateOrderMethodCost();
+                // Menambahkan teks biaya metode pemesanan ke dalam pesan
+                message += '⚬ _*Ongkos Kirim: Rp' + orderMethodCost + '*_' + '\n';
+
+                var finalMethodElement = document.getElementById('finalMethod');
+                if (finalMethodElement)
+                {
+                    var totalAmountText = finalMethodElement.textContent.match(/Rp(\d+(\.\d+)*)/)[1];
+                    message += '____________________________________\n'
+                    message += '⚝ *Total: Rp' + totalAmountText + '* ⚝' + '\n'; // Menambahkan pesan dari finalMethodElement ke dalam pesan WhatsApp
+                } else
+                {
+                    console.error("Elemen '#finalMethod' tidak ditemukan.");
+                }
+
+                var encodedMessage = encodeURIComponent(message);
+                var phoneNumber = '+6281215622101'; // Nomor WhatsApp tujuan
+                var whatsappURL = 'https://wa.me/' + phoneNumber + '?text=' + encodedMessage;
+                window.open(whatsappURL, '_blank');
             }
-
-            var orderMethodCost = updateOrderMethodCost();
-            // Menambahkan teks biaya metode pemesanan ke dalam pesan
-            message += '⚬ _*Ongkos Kirim: Rp' + orderMethodCost + '*_' + '\n';
-
-            var finalMethodElement = document.getElementById('finalMethod');
-            if (finalMethodElement)
-            {
-                var totalAmountText = finalMethodElement.textContent.match(/Rp(\d+(\.\d+)*)/)[1];
-                message += '____________________________________\n'
-                message += '⚝ *Total: Rp' + totalAmountText + '* ⚝' + '\n'; // Menambahkan pesan dari finalMethodElement ke dalam pesan WhatsApp
-            } else
-            {
-                console.error("Elemen '#finalMethod' tidak ditemukan.");
-            }
-
-            var encodedMessage = encodeURIComponent(message);
-            var phoneNumber = '+6281215622101'; // Nomor WhatsApp tujuan
-            var whatsappURL = 'https://wa.me/' + phoneNumber + '?text=' + encodedMessage;
-            window.open(whatsappURL, '_blank');
         }
     }
-
 });
 
 
@@ -254,7 +266,7 @@ function displayMenus(selectedDate)
             var menuItemDiv = document.createElement('div');
             menuItemDiv.classList.add('menu-item');
             menuItemDiv.innerHTML = `
-                <span>${item.name} - Rp${item.price}</span>
+                <span>${item.name} <br> Rp${item.price}</span>
                 <input type="number" min="0" value="${item.defaultQuantity || 0}" class="quantity" data-price="${item.price}">
             `;
             menuDiv.appendChild(menuItemDiv);
