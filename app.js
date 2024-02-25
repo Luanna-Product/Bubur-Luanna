@@ -390,6 +390,7 @@ function getMenuForDay(day)
             { name: 'Lauk frozen tongseng ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen rica-rica ayam negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk Frozen Gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
 
@@ -432,6 +433,7 @@ function getMenuForDay(day)
             { name: 'Lauk frozen tongseng ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen rica-rica ayam negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk Frozen Gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
 
@@ -474,6 +476,7 @@ function getMenuForDay(day)
             { name: 'Lauk frozen tongseng ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen rica-rica ayam negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk Frozen Gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
 
@@ -516,6 +519,7 @@ function getMenuForDay(day)
             { name: 'Lauk frozen tongseng ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen rica-rica ayam negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk Frozen Gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
 
@@ -558,6 +562,7 @@ function getMenuForDay(day)
             { name: 'Lauk frozen tongseng ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen rica-rica ayam negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk Frozen Gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
 
@@ -598,8 +603,10 @@ function getMenuForDay(day)
             { name: 'Bubur frozen kotak salmon 1 pcs', price: 6000, defaultQuantity: quantityBuburFrozenKotakSalmon },
 
             { name: 'Lauk frozen tongseng ayam negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen tongseng ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen rica-rica ayam negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk Frozen Gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
 
@@ -642,6 +649,7 @@ function getMenuForDay(day)
             { name: 'Lauk frozen tongseng ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen rica-rica ayam negeri', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk Frozen Gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
 
