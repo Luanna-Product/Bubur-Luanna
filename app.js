@@ -128,7 +128,7 @@ document.getElementById('logOrdersBtn').addEventListener('click', function ()
                             totalDaysWithOrders++;
                         }
                         var itemName = item.previousElementSibling.textContent.trim();
-                        var nameAndPrice = itemName.split(' - '); // Misalnya, jika nama dan harga dipisahkan oleh tanda hubung "-"
+                        var nameAndPrice = itemName.split(' ⤷ '); // Misalnya, jika nama dan harga dipisahkan oleh tanda hubung "-"
                         var name = nameAndPrice[0]; // Bagian pertama adalah nama
                         var price = nameAndPrice[1]; // Bagian kedua adalah harga
 
@@ -266,7 +266,7 @@ function displayMenus(selectedDate)
             var menuItemDiv = document.createElement('div');
             menuItemDiv.classList.add('menu-item');
             menuItemDiv.innerHTML = `
-                <span>${item.name} <br> Rp${item.price}</span>
+                <span>${item.name} <br>⤷ Rp${item.price}</span>
                 <input type="number" min="0" value="${item.defaultQuantity || 0}" class="quantity" data-price="${item.price}">
             `;
             menuDiv.appendChild(menuItemDiv);
