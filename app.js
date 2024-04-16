@@ -13,11 +13,12 @@ var quantityNasiTim_half = 0;
 var quantityNasiTim_1 = 0;
 var quantitySup = 0;
 var quantityJusBuah = 0;
-var quantityPaketBuburFrozenKotak = 0;
-var quantityBuburFrozenCup = 0;
-var quantityBuburFrozenCupSalmon = 0;
-var quantityBuburFrozenKotak = 0;
-var quantityBuburFrozenKotakSalmon = 0;
+var quantityPaketBuburFrozen = 0;
+var quantityBuburFrozen = 0;
+var quantityBuburFrozenSalmon = 0;
+var quantityPaketNasiTimFrozen = 0;
+var quantityNasiTimFrozen = 0;
+var quantityNasiTimFrozenSalmon = 0;
 
 // Mendapatkan nilai variabel var
 packet = params.get('packet');
@@ -29,11 +30,12 @@ quantityNasiTim_half = params.get('nasitim_half');
 quantityNasiTim_1 = params.get('nasitim_1');
 quantitySup = params.get('sup');
 quantityJusBuah = params.get('jusbuah');
-quantityPaketBuburFrozenKotak = params.get('paketbuburfrozenkotak');
-quantityBuburFrozenCup = params.get('buburfrozencup');
-quantityBuburFrozenCupSalmon = params.get('buburfrozencupsalmon');
-quantityBuburFrozenKotak = params.get('buburfrozenkotak');
-quantityBuburFrozenKotakSalmon = params.get('buburfrozenkotaksalmon');
+quantityPaketBuburFrozen = params.get('paketbuburfrozen');
+quantityBuburFrozen = params.get('buburfrozen');
+quantityBuburFrozenSalmon = params.get('buburfrozensalmon');
+quantityPaketNasiTimFrozen = params.get('paketnasitimfrozen');
+quantityNasiTimFrozen = params.get('nasitimfrozen');
+quantityNasiTimFrozenSalmon = params.get('nasitimfrozensalmon');
 
 var confirm = 0;
 
@@ -142,16 +144,18 @@ document.getElementById('logOrdersBtn').addEventListener('click', function ()
                 });
 
                 // Membuat pesan yang berisi detail pesanan
-                Object.keys(ordersByDay).forEach(function (dayIndex)
-                {
+                Object.keys(ordersByDay).forEach(function(dayIndex) {
                     var currentDate = new Date(parseInt(dayIndex));
-                    message += '➲ ' + currentDate.toLocaleDateString() + ':\n';
-                    ordersByDay[dayIndex].orders.forEach(function (order)
-                    {
+                    var options = { day: 'numeric', month: 'long', year: 'numeric' }; // Opsi untuk tanggal lokal
+                    var formattedDate = currentDate.toLocaleDateString('id-ID', options); // Menggunakan opsi lokal Indonesia (id-ID)
+                    message += '➲ ' + formattedDate + ':\n';
+                
+                    ordersByDay[dayIndex].orders.forEach(function(order) {
                         message += '    ✧' + order.name + '\n' + '          ' + order.quantity + ' x ' + order.price + ' = Rp' + order.total + '\n';
                     });
                     message += '\n';
                 });
+                
 
                 // Menambahkan total keseluruhan
                 message += '⚬ _*Total Produk ' + totalDaysWithOrders + ' Hari: Rp' + overallTotal + '*_' + '\n';
@@ -380,12 +384,14 @@ function getMenuForDay(day)
             { name: 'Sup ikan dory', price: 8000, defaultQuantity: quantitySup },
             { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
-            { name: 'Paket bubur frozen kotak (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozenKotak },
+            { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
+            { name: 'Bubur frozen 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozen },
+            { name: 'Bubur frozen salmon 1 pcs', price: 6000, defaultQuantity: quantityBuburFrozenSalmon },
 
-            { name: 'Bubur frozen cup 1 porsi', price: 5000, defaultQuantity: quantityBuburFrozenCup },
-            { name: 'Bubur frozen cup salmon 1 porsi', price: 10000, defaultQuantity: quantityBuburFrozenCupSalmon },
-            { name: 'Bubur frozen kotak 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozenKotak },
-            { name: 'Bubur frozen kotak salmon 1 pcs', price: 6000, defaultQuantity: quantityBuburFrozenKotakSalmon },
+            { name: 'Paket nasi tim frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketNasiTimFrozen },
+            { name: 'Nasi tim frozen 1 pcs', price: 3000, defaultQuantity: quantityNasiTimFrozen },
+            { name: 'Nasi tim frozen salmon 1 pcs', price: 6000, defaultQuantity: quantityNasiTimFrozenSalmon },
+            
 
             { name: 'Lauk frozen tongseng ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
@@ -396,6 +402,7 @@ function getMenuForDay(day)
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
+            { name: 'Risol mayo 5 pcs', price: 15500, defaultQuantity: 0 },
 
             { name: 'Kuah', price: 2000, defaultQuantity: 0 },
 
@@ -423,12 +430,13 @@ function getMenuForDay(day)
             { name: 'Sup ayam kampung', price: 8000, defaultQuantity: quantitySup },
             { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
-            { name: 'Paket bubur frozen kotak (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozenKotak },
-
-            { name: 'Bubur frozen cup 1 porsi', price: 5000, defaultQuantity: quantityBuburFrozenCup },
-            { name: 'Bubur frozen cup salmon 1 porsi', price: 10000, defaultQuantity: quantityBuburFrozenCupSalmon },
-            { name: 'Bubur frozen kotak 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozenKotak },
-            { name: 'Bubur frozen kotak salmon 1 pcs', price: 6000, defaultQuantity: quantityBuburFrozenKotakSalmon },
+            { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
+            { name: 'Bubur frozen 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozen },
+            { name: 'Bubur frozen salmon 1 pcs', price: 6000, defaultQuantity: quantityBuburFrozenSalmon },
+            
+            { name: 'Paket nasi tim frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketNasiTimFrozen },
+            { name: 'Nasi tim frozen 1 pcs', price: 3000, defaultQuantity: quantityNasiTimFrozen },
+            { name: 'Nasi tim frozen salmon 1 pcs', price: 6000, defaultQuantity: quantityNasiTimFrozenSalmon },
 
             { name: 'Lauk frozen tongseng ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
@@ -439,6 +447,7 @@ function getMenuForDay(day)
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
+            { name: 'Risol mayo 5 pcs', price: 15500, defaultQuantity: 0 },
 
             { name: 'Kuah', price: 2000, defaultQuantity: 0 },
 
@@ -466,12 +475,13 @@ function getMenuForDay(day)
             { name: 'Sup ikan salmon', price: 20000, defaultQuantity: quantitySup },
             { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
-            { name: 'Paket bubur frozen kotak (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozenKotak },
-
-            { name: 'Bubur frozen cup 1 porsi', price: 5000, defaultQuantity: quantityBuburFrozenCup },
-            { name: 'Bubur frozen cup salmon 1 porsi', price: 10000, defaultQuantity: quantityBuburFrozenCupSalmon },
-            { name: 'Bubur frozen kotak 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozenKotak },
-            { name: 'Bubur frozen kotak salmon 1 pcs', price: 6000, defaultQuantity: quantityBuburFrozenKotakSalmon },
+            { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
+            { name: 'Bubur frozen 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozen },
+            { name: 'Bubur frozen salmon 1 pcs', price: 6000, defaultQuantity: quantityBuburFrozenSalmon },
+            
+            { name: 'Paket nasi tim frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketNasiTimFrozen },
+            { name: 'Nasi tim frozen 1 pcs', price: 3000, defaultQuantity: quantityNasiTimFrozen },
+            { name: 'Nasi tim frozen salmon 1 pcs', price: 6000, defaultQuantity: quantityNasiTimFrozenSalmon },
 
             { name: 'Lauk frozen tongseng ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
@@ -482,6 +492,7 @@ function getMenuForDay(day)
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
+            { name: 'Risol mayo 5 pcs', price: 15500, defaultQuantity: 0 },
 
             { name: 'Kuah', price: 2000, defaultQuantity: 0 },
 
@@ -509,12 +520,13 @@ function getMenuForDay(day)
             { name: 'Sup daging sapi', price: 8000, defaultQuantity: quantitySup },
             { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
-            { name: 'Paket bubur frozen kotak (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozenKotak },
+            { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
+            { name: 'Bubur frozen 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozen },
+            { name: 'Bubur frozen salmon 1 pcs', price: 6000, defaultQuantity: quantityBuburFrozenSalmon },
 
-            { name: 'Bubur frozen cup 1 porsi', price: 5000, defaultQuantity: quantityBuburFrozenCup },
-            { name: 'Bubur frozen cup salmon 1 porsi', price: 10000, defaultQuantity: quantityBuburFrozenCupSalmon },
-            { name: 'Bubur frozen kotak 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozenKotak },
-            { name: 'Bubur frozen kotak salmon 1 pcs', price: 6000, defaultQuantity: quantityBuburFrozenKotakSalmon },
+            { name: 'Paket nasi tim frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketNasiTimFrozen },
+            { name: 'Nasi tim frozen 1 pcs', price: 3000, defaultQuantity: quantityNasiTimFrozen },
+            { name: 'Nasi tim frozen salmon 1 pcs', price: 6000, defaultQuantity: quantityNasiTimFrozenSalmon },
 
             { name: 'Lauk frozen tongseng ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
@@ -525,6 +537,7 @@ function getMenuForDay(day)
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
+            { name: 'Risol mayo 5 pcs', price: 15500, defaultQuantity: 0 },
 
             { name: 'Kuah', price: 2000, defaultQuantity: 0 },
 
@@ -552,12 +565,13 @@ function getMenuForDay(day)
             { name: 'Sup ikan kakap', price: 20000, defaultQuantity: quantitySup },
             { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
-            { name: 'Paket bubur frozen kotak (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozenKotak },
+            { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
+            { name: 'Bubur frozen 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozen },
+            { name: 'Bubur frozen salmon 1 pcs', price: 6000, defaultQuantity: quantityBuburFrozenSalmon },
 
-            { name: 'Bubur frozen cup 1 porsi', price: 5000, defaultQuantity: quantityBuburFrozenCup },
-            { name: 'Bubur frozen cup salmon 1 porsi', price: 10000, defaultQuantity: quantityBuburFrozenCupSalmon },
-            { name: 'Bubur frozen kotak 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozenKotak },
-            { name: 'Bubur frozen kotak salmon 1 pcs', price: 6000, defaultQuantity: quantityBuburFrozenKotakSalmon },
+            { name: 'Paket nasi tim frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketNasiTimFrozen },
+            { name: 'Nasi tim frozen 1 pcs', price: 3000, defaultQuantity: quantityNasiTimFrozen },
+            { name: 'Nasi tim frozen salmon 1 pcs', price: 6000, defaultQuantity: quantityNasiTimFrozenSalmon },
 
             { name: 'Lauk frozen tongseng ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
@@ -568,6 +582,7 @@ function getMenuForDay(day)
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
+            { name: 'Risol mayo 5 pcs', price: 15500, defaultQuantity: 0 },
 
             { name: 'Kuah', price: 2000, defaultQuantity: 0 },
 
@@ -595,12 +610,13 @@ function getMenuForDay(day)
             { name: 'Sup ikan dory', price: 8000, defaultQuantity: quantitySup },
             { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
-            { name: 'Paket bubur frozen kotak (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozenKotak },
+            { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
+            { name: 'Bubur frozen 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozen },
+            { name: 'Bubur frozen salmon 1 pcs', price: 6000, defaultQuantity: quantityBuburFrozenSalmon },
 
-            { name: 'Bubur frozen cup 1 porsi', price: 5000, defaultQuantity: quantityBuburFrozenCup },
-            { name: 'Bubur frozen cup salmon 1 porsi', price: 10000, defaultQuantity: quantityBuburFrozenCupSalmon },
-            { name: 'Bubur frozen kotak 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozenKotak },
-            { name: 'Bubur frozen kotak salmon 1 pcs', price: 6000, defaultQuantity: quantityBuburFrozenKotakSalmon },
+            { name: 'Paket nasi tim frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketNasiTimFrozen },
+            { name: 'Nasi tim frozen 1 pcs', price: 3000, defaultQuantity: quantityNasiTimFrozen },
+            { name: 'Nasi tim frozen salmon 1 pcs', price: 6000, defaultQuantity: quantityNasiTimFrozenSalmon },
 
             { name: 'Lauk frozen tongseng ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tongseng ayam negeri', price: 10000, defaultQuantity: 0 },
@@ -612,6 +628,7 @@ function getMenuForDay(day)
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
+            { name: 'Risol mayo 5 pcs', price: 15500, defaultQuantity: 0 },
 
             { name: 'Kuah', price: 2000, defaultQuantity: 0 },
 
@@ -639,12 +656,13 @@ function getMenuForDay(day)
             { name: 'Sup daging sapi', price: 8000, defaultQuantity: quantitySup },
             { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
-            { name: 'Paket bubur frozen kotak (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozenKotak },
-
-            { name: 'Bubur frozen cup 1 porsi', price: 5000, defaultQuantity: quantityBuburFrozenCup },
-            { name: 'Bubur frozen cup salmon 1 porsi', price: 10000, defaultQuantity: quantityBuburFrozenCupSalmon },
-            { name: 'Bubur frozen kotak 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozenKotak },
-            { name: 'Bubur frozen kotak salmon 1 pcs', price: 6000, defaultQuantity: quantityBuburFrozenKotakSalmon },
+            { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
+            { name: 'Bubur frozen 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozen },
+            { name: 'Bubur frozen salmon 1 pcs', price: 6000, defaultQuantity: quantityBuburFrozenSalmon },
+            
+            { name: 'Paket nasi tim frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketNasiTimFrozen },
+            { name: 'Nasi tim frozen 1 pcs', price: 3000, defaultQuantity: quantityNasiTimFrozen },
+            { name: 'Nasi tim frozen salmon 1 pcs', price: 6000, defaultQuantity: quantityNasiTimFrozenSalmon },
 
             { name: 'Lauk frozen tongseng ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
@@ -655,6 +673,7 @@ function getMenuForDay(day)
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
+            { name: 'Risol mayo 5 pcs', price: 15500, defaultQuantity: 0 },
 
             { name: 'Kuah', price: 2000, defaultQuantity: 0 },
 
