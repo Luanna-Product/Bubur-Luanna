@@ -289,7 +289,7 @@ function displayMenus(selectedDate)
 
         console.log(currentDate);
 
-        var changeMenu = new Date('Sat Jun 01 2024 00:00:00 GMT+0700 (Waktu Indonesia Barat)');
+        var changeMenu = new Date('Mon Jul 01 2024 00:00:00 GMT+0700 (Waktu Indonesia Barat)');
 
         console.log(changeMenu);
         
