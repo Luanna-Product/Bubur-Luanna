@@ -432,10 +432,10 @@ function getMenuForDay(day)
             { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen rica-rica ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk Frozen gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen oseng daun pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
-            { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
+            // { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
+            // { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
             { name: 'Lauk frozen makaroni schotle', price: 3000, defaultQuantity: 0},
 
 
@@ -482,10 +482,10 @@ function getMenuForDay(day)
             { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen rica-rica ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk Frozen gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen oseng daun pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
-            { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
+            // { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
+            // { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
             { name: 'Lauk frozen makaroni schotle', price: 3000, defaultQuantity: 0},
 
 
@@ -532,10 +532,10 @@ function getMenuForDay(day)
             { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen rica-rica ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk Frozen gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen oseng daun pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
-            { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
+            // { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
+            // { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
             { name: 'Lauk frozen makaroni schotle', price: 3000, defaultQuantity: 0},
 
 
@@ -582,10 +582,10 @@ function getMenuForDay(day)
             { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen rica-rica ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk Frozen gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen oseng daun pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
-            { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
+            // { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
+            // { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
             { name: 'Lauk frozen makaroni schotle', price: 3000, defaultQuantity: 0},
 
 
@@ -632,10 +632,10 @@ function getMenuForDay(day)
             { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen rica-rica ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk Frozen gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen oseng daun pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
-            { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
+            // { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
+            // { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
             { name: 'Lauk frozen makaroni schotle', price: 3000, defaultQuantity: 0},
 
 
@@ -683,10 +683,10 @@ function getMenuForDay(day)
             { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen rica-rica ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk Frozen gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen oseng daun pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
-            { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
+            // { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
+            // { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
             { name: 'Lauk frozen makaroni schotle', price: 3000, defaultQuantity: 0},
 
 
@@ -733,10 +733,10 @@ function getMenuForDay(day)
             { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen rica-rica ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk Frozen gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen oseng daun pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
-            { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
+            // { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
+            // { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
             { name: 'Lauk frozen makaroni schotle', price: 3000, defaultQuantity: 0},
 
 
@@ -794,10 +794,10 @@ function getMenuForDayTemporary(day)
             { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen rica-rica ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk Frozen gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen oseng daun pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
-            { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
+            // { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
+            // { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
             { name: 'Lauk frozen makaroni schotle', price: 3000, defaultQuantity: 0},
 
 
@@ -844,10 +844,10 @@ function getMenuForDayTemporary(day)
             { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen rica-rica ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk Frozen gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen oseng daun pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
-            { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
+            // { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
+            // { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
             { name: 'Lauk frozen makaroni schotle', price: 3000, defaultQuantity: 0},
 
 
@@ -894,10 +894,10 @@ function getMenuForDayTemporary(day)
             { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen rica-rica ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk Frozen gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen oseng daun pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
-            { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
+            // { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
+            // { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
             { name: 'Lauk frozen makaroni schotle', price: 3000, defaultQuantity: 0},
 
 
@@ -944,10 +944,10 @@ function getMenuForDayTemporary(day)
             { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen rica-rica ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk Frozen gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen oseng daun pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
-            { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
+            // { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
+            // { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
             { name: 'Lauk frozen makaroni schotle', price: 3000, defaultQuantity: 0},
 
 
@@ -994,10 +994,10 @@ function getMenuForDayTemporary(day)
             { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen rica-rica ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk Frozen gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen oseng daun pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
-            { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
+            // { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
+            // { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
             { name: 'Lauk frozen makaroni schotle', price: 3000, defaultQuantity: 0},
 
 
@@ -1045,10 +1045,10 @@ function getMenuForDayTemporary(day)
             { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen rica-rica ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk Frozen gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen oseng daun pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
-            { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
+            // { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
+            // { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
             { name: 'Lauk frozen makaroni schotle', price: 3000, defaultQuantity: 0},
 
 
@@ -1095,10 +1095,10 @@ function getMenuForDayTemporary(day)
             { name: 'Lauk frozen besengek ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen rica-rica ayam negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk Frozen gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen oseng daung pepaya', price: 10000, defaultQuantity: 0 },
+            { name: 'Lauk frozen oseng daun pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
-            { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
-            { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
+            // { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
+            // { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
             { name: 'Lauk frozen makaroni schotle', price: 3000, defaultQuantity: 0},
 
 
