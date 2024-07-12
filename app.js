@@ -456,7 +456,7 @@ function getMenuForDay(day)
             { name: 'Ayam negeri giling 5 butir', price: 7500, defaultQuantity: 0 },
             
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
-            { name: 'Daging Sukiyaki 200 gram', price: 40000, defaultQuantity: 0 },
+            { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
@@ -508,7 +508,7 @@ function getMenuForDay(day)
             { name: 'Ayam negeri giling', price: 7500, defaultQuantity: 0 },
             
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
-            { name: 'Daging Sukiyaki 200 gram', price: 40000, defaultQuantity: 0 },
+            { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
@@ -560,7 +560,7 @@ function getMenuForDay(day)
             { name: 'Ayam negeri giling', price: 7500, defaultQuantity: 0 },
             
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
-            { name: 'Daging Sukiyaki 200 gram', price: 40000, defaultQuantity: 0 },
+            { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
@@ -612,7 +612,7 @@ function getMenuForDay(day)
             { name: 'Ayam negeri giling', price: 7500, defaultQuantity: 0 },
             
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
-            { name: 'Daging Sukiyaki 200 gram', price: 40000, defaultQuantity: 0 },
+            { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
@@ -664,7 +664,7 @@ function getMenuForDay(day)
             { name: 'Ayam negeri giling', price: 7500, defaultQuantity: 0 },
             
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
-            { name: 'Daging Sukiyaki 200 gram', price: 40000, defaultQuantity: 0 },
+            { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
@@ -717,7 +717,7 @@ function getMenuForDay(day)
             { name: 'Ayam negeri giling', price: 7500, defaultQuantity: 0 },
             
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
-            { name: 'Daging Sukiyaki 200 gram', price: 40000, defaultQuantity: 0 },
+            { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
@@ -769,7 +769,7 @@ function getMenuForDay(day)
             { name: 'Ayam negeri giling', price: 7500, defaultQuantity: 0 },
             
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
-            { name: 'Daging Sukiyaki 200 gram', price: 40000, defaultQuantity: 0 },
+            { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
@@ -832,7 +832,7 @@ function getMenuForDayTemporary(day)
             { name: 'Ayam negeri giling 5 butir', price: 7500, defaultQuantity: 0 },
             
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
-            { name: 'Daging Sukiyaki 200 gram', price: 40000, defaultQuantity: 0 },
+            { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
@@ -884,7 +884,7 @@ function getMenuForDayTemporary(day)
             { name: 'Ayam negeri giling', price: 7500, defaultQuantity: 0 },
             
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
-            { name: 'Daging Sukiyaki 200 gram', price: 40000, defaultQuantity: 0 },
+            { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
@@ -936,7 +936,7 @@ function getMenuForDayTemporary(day)
             { name: 'Ayam negeri giling', price: 7500, defaultQuantity: 0 },
             
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
-            { name: 'Daging Sukiyaki 200 gram', price: 40000, defaultQuantity: 0 },
+            { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
@@ -988,7 +988,7 @@ function getMenuForDayTemporary(day)
             { name: 'Ayam negeri giling', price: 7500, defaultQuantity: 0 },
             
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
-            { name: 'Daging Sukiyaki 200 gram', price: 40000, defaultQuantity: 0 },
+            { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
@@ -1040,7 +1040,7 @@ function getMenuForDayTemporary(day)
             { name: 'Ayam negeri giling', price: 7500, defaultQuantity: 0 },
             
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
-            { name: 'Daging Sukiyaki 200 gram', price: 40000, defaultQuantity: 0 },
+            { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
@@ -1093,7 +1093,7 @@ function getMenuForDayTemporary(day)
             { name: 'Ayam negeri giling', price: 7500, defaultQuantity: 0 },
             
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
-            { name: 'Daging Sukiyaki 200 gram', price: 40000, defaultQuantity: 0 },
+            { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
@@ -1145,7 +1145,7 @@ function getMenuForDayTemporary(day)
             { name: 'Ayam negeri giling', price: 7500, defaultQuantity: 0 },
             
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
-            { name: 'Daging Sukiyaki 200 gram', price: 40000, defaultQuantity: 0 },
+            { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
