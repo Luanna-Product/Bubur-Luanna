@@ -434,14 +434,14 @@ function getMenuForDay(day)
             { name: 'Lauk Frozen gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daun pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
-            // { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
-            // { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
-            { name: 'Lauk frozen makaroni schotle', price: 3000, defaultQuantity: 0},
-
+            { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
+            { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0},
+            { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0},
 
             { name: 'Kuah', price: 2000, defaultQuantity: 0 },
 
@@ -454,7 +454,9 @@ function getMenuForDay(day)
             { name: 'Ayam Kampung Giling 5 butir', price: 15000, defaultQuantity: 0 },
             { name: 'Ayam Kampung Utuh', price: 55000, defaultQuantity: 0 },
             { name: 'Ayam negeri giling 5 butir', price: 7500, defaultQuantity: 0 },
+            
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
+            { name: 'Daging Sukiyaki 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
@@ -484,14 +486,14 @@ function getMenuForDay(day)
             { name: 'Lauk Frozen gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daun pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
-            // { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
-            // { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
-            { name: 'Lauk frozen makaroni schotle', price: 3000, defaultQuantity: 0},
-
+            { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
+            { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0},
+            { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0},
 
             { name: 'Kuah', price: 2000, defaultQuantity: 0 },
 
@@ -504,7 +506,9 @@ function getMenuForDay(day)
             { name: 'Ayam Kampung Giling 5 butir', price: 15000, defaultQuantity: 0 },
             { name: 'Ayam Kampung Utuh', price: 55000, defaultQuantity: 0 },
             { name: 'Ayam negeri giling', price: 7500, defaultQuantity: 0 },
+            
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
+            { name: 'Daging Sukiyaki 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
@@ -534,14 +538,14 @@ function getMenuForDay(day)
             { name: 'Lauk Frozen gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daun pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
-            // { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
-            // { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
-            { name: 'Lauk frozen makaroni schotle', price: 3000, defaultQuantity: 0},
-
+            { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
+            { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0},
+            { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0},
 
             { name: 'Kuah', price: 2000, defaultQuantity: 0 },
 
@@ -554,7 +558,9 @@ function getMenuForDay(day)
             { name: 'Ayam Kampung Giling 5 butir', price: 15000, defaultQuantity: 0 },
             { name: 'Ayam Kampung Utuh', price: 55000, defaultQuantity: 0 },
             { name: 'Ayam negeri giling', price: 7500, defaultQuantity: 0 },
+            
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
+            { name: 'Daging Sukiyaki 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
@@ -584,14 +590,14 @@ function getMenuForDay(day)
             { name: 'Lauk Frozen gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daun pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
-            // { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
-            // { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
-            { name: 'Lauk frozen makaroni schotle', price: 3000, defaultQuantity: 0},
-
+            { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
+            { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0},
+            { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0},
 
             { name: 'Kuah', price: 2000, defaultQuantity: 0 },
 
@@ -604,7 +610,9 @@ function getMenuForDay(day)
             { name: 'Ayam Kampung Giling 5 butir', price: 15000, defaultQuantity: 0 },
             { name: 'Ayam Kampung Utuh', price: 55000, defaultQuantity: 0 },
             { name: 'Ayam negeri giling', price: 7500, defaultQuantity: 0 },
+            
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
+            { name: 'Daging Sukiyaki 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
@@ -634,14 +642,14 @@ function getMenuForDay(day)
             { name: 'Lauk Frozen gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daun pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
-            // { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
-            // { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
-            { name: 'Lauk frozen makaroni schotle', price: 3000, defaultQuantity: 0},
-
+            { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
+            { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0},
+            { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0},
 
             { name: 'Kuah', price: 2000, defaultQuantity: 0 },
 
@@ -654,7 +662,9 @@ function getMenuForDay(day)
             { name: 'Ayam Kampung Giling 5 butir', price: 15000, defaultQuantity: 0 },
             { name: 'Ayam Kampung Utuh', price: 55000, defaultQuantity: 0 },
             { name: 'Ayam negeri giling', price: 7500, defaultQuantity: 0 },
+            
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
+            { name: 'Daging Sukiyaki 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
@@ -685,14 +695,14 @@ function getMenuForDay(day)
             { name: 'Lauk Frozen gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daun pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
-            // { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
-            // { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
-            { name: 'Lauk frozen makaroni schotle', price: 3000, defaultQuantity: 0},
-
+            { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
+            { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0},
+            { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0},
 
             { name: 'Kuah', price: 2000, defaultQuantity: 0 },
 
@@ -705,7 +715,9 @@ function getMenuForDay(day)
             { name: 'Ayam Kampung Giling 5 butir', price: 15000, defaultQuantity: 0 },
             { name: 'Ayam Kampung Utuh', price: 55000, defaultQuantity: 0 },
             { name: 'Ayam negeri giling', price: 7500, defaultQuantity: 0 },
+            
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
+            { name: 'Daging Sukiyaki 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
@@ -735,14 +747,14 @@ function getMenuForDay(day)
             { name: 'Lauk Frozen gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daun pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
-            // { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
-            // { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
-            { name: 'Lauk frozen makaroni schotle', price: 3000, defaultQuantity: 0},
-
+            { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
+            { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0},
+            { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0},
 
             { name: 'Kuah', price: 2000, defaultQuantity: 0 },
 
@@ -755,7 +767,9 @@ function getMenuForDay(day)
             { name: 'Ayam Kampung Giling 5 butir', price: 15000, defaultQuantity: 0 },
             { name: 'Ayam Kampung Utuh', price: 55000, defaultQuantity: 0 },
             { name: 'Ayam negeri giling', price: 7500, defaultQuantity: 0 },
+            
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
+            { name: 'Daging Sukiyaki 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
@@ -796,14 +810,14 @@ function getMenuForDayTemporary(day)
             { name: 'Lauk Frozen gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daun pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
-            // { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
-            // { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
-            { name: 'Lauk frozen makaroni schotle', price: 3000, defaultQuantity: 0},
-
+            { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
+            { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0},
+            { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0},
 
             { name: 'Kuah', price: 2000, defaultQuantity: 0 },
 
@@ -816,7 +830,9 @@ function getMenuForDayTemporary(day)
             { name: 'Ayam Kampung Giling 5 butir', price: 15000, defaultQuantity: 0 },
             { name: 'Ayam Kampung Utuh', price: 55000, defaultQuantity: 0 },
             { name: 'Ayam negeri giling 5 butir', price: 7500, defaultQuantity: 0 },
+            
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
+            { name: 'Daging Sukiyaki 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
@@ -846,14 +862,14 @@ function getMenuForDayTemporary(day)
             { name: 'Lauk Frozen gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daun pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
-            // { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
-            // { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
-            { name: 'Lauk frozen makaroni schotle', price: 3000, defaultQuantity: 0},
-
+            { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
+            { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0},
+            { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0},
 
             { name: 'Kuah', price: 2000, defaultQuantity: 0 },
 
@@ -866,7 +882,9 @@ function getMenuForDayTemporary(day)
             { name: 'Ayam Kampung Giling 5 butir', price: 15000, defaultQuantity: 0 },
             { name: 'Ayam Kampung Utuh', price: 55000, defaultQuantity: 0 },
             { name: 'Ayam negeri giling', price: 7500, defaultQuantity: 0 },
+            
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
+            { name: 'Daging Sukiyaki 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
@@ -896,14 +914,14 @@ function getMenuForDayTemporary(day)
             { name: 'Lauk Frozen gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daun pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
-            // { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
-            // { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
-            { name: 'Lauk frozen makaroni schotle', price: 3000, defaultQuantity: 0},
-
+            { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
+            { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0},
+            { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0},
 
             { name: 'Kuah', price: 2000, defaultQuantity: 0 },
 
@@ -916,7 +934,9 @@ function getMenuForDayTemporary(day)
             { name: 'Ayam Kampung Giling 5 butir', price: 15000, defaultQuantity: 0 },
             { name: 'Ayam Kampung Utuh', price: 55000, defaultQuantity: 0 },
             { name: 'Ayam negeri giling', price: 7500, defaultQuantity: 0 },
+            
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
+            { name: 'Daging Sukiyaki 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
@@ -946,14 +966,14 @@ function getMenuForDayTemporary(day)
             { name: 'Lauk Frozen gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daun pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
-            // { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
-            // { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
-            { name: 'Lauk frozen makaroni schotle', price: 3000, defaultQuantity: 0},
-
+            { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
+            { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0},
+            { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0},
 
             { name: 'Kuah', price: 2000, defaultQuantity: 0 },
 
@@ -966,7 +986,9 @@ function getMenuForDayTemporary(day)
             { name: 'Ayam Kampung Giling 5 butir', price: 15000, defaultQuantity: 0 },
             { name: 'Ayam Kampung Utuh', price: 55000, defaultQuantity: 0 },
             { name: 'Ayam negeri giling', price: 7500, defaultQuantity: 0 },
+            
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
+            { name: 'Daging Sukiyaki 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
@@ -996,14 +1018,14 @@ function getMenuForDayTemporary(day)
             { name: 'Lauk Frozen gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daun pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
-            // { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
-            // { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
-            { name: 'Lauk frozen makaroni schotle', price: 3000, defaultQuantity: 0},
-
+            { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
+            { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0},
+            { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0},
 
             { name: 'Kuah', price: 2000, defaultQuantity: 0 },
 
@@ -1016,7 +1038,9 @@ function getMenuForDayTemporary(day)
             { name: 'Ayam Kampung Giling 5 butir', price: 15000, defaultQuantity: 0 },
             { name: 'Ayam Kampung Utuh', price: 55000, defaultQuantity: 0 },
             { name: 'Ayam negeri giling', price: 7500, defaultQuantity: 0 },
+            
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
+            { name: 'Daging Sukiyaki 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
@@ -1047,14 +1071,14 @@ function getMenuForDayTemporary(day)
             { name: 'Lauk Frozen gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daun pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
-            // { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
-            // { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
-            { name: 'Lauk frozen makaroni schotle', price: 3000, defaultQuantity: 0},
-
+            { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
+            { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0},
+            { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0},
 
             { name: 'Kuah', price: 2000, defaultQuantity: 0 },
 
@@ -1067,7 +1091,9 @@ function getMenuForDayTemporary(day)
             { name: 'Ayam Kampung Giling 5 butir', price: 15000, defaultQuantity: 0 },
             { name: 'Ayam Kampung Utuh', price: 55000, defaultQuantity: 0 },
             { name: 'Ayam negeri giling', price: 7500, defaultQuantity: 0 },
+            
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
+            { name: 'Daging Sukiyaki 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
@@ -1097,14 +1123,14 @@ function getMenuForDayTemporary(day)
             { name: 'Lauk Frozen gulai Ayam Negeri', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen oseng daun pepaya', price: 10000, defaultQuantity: 0 },
             { name: 'Lauk frozen tempe lombok ijo', price: 10000, defaultQuantity: 0 },
-            // { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
-            // { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
-            { name: 'Lauk frozen makaroni schotle', price: 3000, defaultQuantity: 0},
-
+            { name: 'Lauk frozen ikan tuna asam pedas', price: 10000, defaultQuantity: 0},
+            { name: 'Lauk frozen ikan tuna acar', price: 10000, defaultQuantity: 0},
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0},
+            { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0},
 
             { name: 'Kuah', price: 2000, defaultQuantity: 0 },
 
@@ -1117,7 +1143,9 @@ function getMenuForDayTemporary(day)
             { name: 'Ayam Kampung Giling 5 butir', price: 15000, defaultQuantity: 0 },
             { name: 'Ayam Kampung Utuh', price: 55000, defaultQuantity: 0 },
             { name: 'Ayam negeri giling', price: 7500, defaultQuantity: 0 },
+            
             { name: 'Ayam Negri Fillet 100 gram', price: 10000, defaultQuantity: 0 },
+            { name: 'Daging Sukiyaki 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
