@@ -945,8 +945,8 @@ function getMenuForDayTemporary(day)
         [ // Wednesday (3) Rabu
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ayam kampung + wortel', price: 2500, defaultQuantity: quantityBuburA_half },
             { name: '1 Bubur ayam kampung + wortel', price: 5000, defaultQuantity: quantityBuburA_1 },
-            { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur kurma + kacang-kacangan', price: 2500, defaultQuantity: quantityBuburB_half },
-            { name: '1 Bubur kurma + kacang-kacangan', price: 5000, defaultQuantity: quantityBuburB_1 },
+            { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur daging kelinci + buah bit', price: 2500, defaultQuantity: quantityBuburB_half },
+            { name: '1 Bubur daging kelinci + buah bit', price: 5000, defaultQuantity: quantityBuburB_1 },
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim ikan salmon', price: 5000, defaultQuantity: quantityNasiTim_half },
             { name: '1 Nasi tim ikan salmon', price: 10000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup daging sapi', price: 8000, defaultQuantity: quantitySup },
