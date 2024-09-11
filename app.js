@@ -1412,7 +1412,7 @@ function getMenuForDayTemporaryTwo(day)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur beras hitam + hati ayam kampung + kacang merah', price: 3000, defaultQuantity: quantityBuburA_half },
             { name: '1 Bubur beras hitam + hati ayam kampung + kacang merah', price: 6000, defaultQuantity: quantityBuburA_1 },
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur daging sapi + kacang polong', price: 3000, defaultQuantity: quantityBuburB_half },
-            { name: '1 Bubur daging sapi + kacang polong', price: 60000, defaultQuantity: quantityBuburB_1 },
+            { name: '1 Bubur daging sapi + kacang polong', price: 6000, defaultQuantity: quantityBuburB_1 },
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim hati ayam kampung', price: 3000, defaultQuantity: quantityNasiTim_half },
             { name: '1 Nasi tim hati ayam kampung', price: 6000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup ikan dory', price: 9000, defaultQuantity: quantitySup },
