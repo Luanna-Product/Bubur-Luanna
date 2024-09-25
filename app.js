@@ -1461,12 +1461,12 @@ function getMenuForDayTemporaryTwo(day)
             { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
         ],
         [ // Saturday (6)
-            { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ikan tuna + tomat', price: 3000, defaultQuantity: quantityBuburA_half },
-            { name: '1 Bubur ikan tuna + tomat', price: 6000, defaultQuantity: quantityBuburA_1 },
+            { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ikan kakap + tomat', price: 3000, defaultQuantity: quantityBuburA_half },
+            { name: '1 Bubur ikan kakap + tomat', price: 6000, defaultQuantity: quantityBuburA_1 },
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ayam kampung + brokoli', price: 3000, defaultQuantity: quantityBuburB_half },
             { name: '1 Bubur ayam kampung + brokoli', price: 6000, defaultQuantity: quantityBuburB_1 },
-            { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim ikan tuna', price: 3000, defaultQuantity: quantityNasiTim_half },
-            { name: '1 Nasi tim ikan tuna', price: 6000, defaultQuantity: quantityNasiTim_1 },
+            { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim ikan kakap', price: 3000, defaultQuantity: quantityNasiTim_half },
+            { name: '1 Nasi tim ikan kakap', price: 6000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup daging sapi', price: 9000, defaultQuantity: quantitySup },
             { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
