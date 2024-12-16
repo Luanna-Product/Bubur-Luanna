@@ -457,6 +457,8 @@ function getMenuForDay(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
+            { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
+            { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 60000, defaultQuantity: 0 },
             { name: 'Ikan dory 100 gram', price: 12000, defaultQuantity: 0 },
             { name: 'Ikan shisamo premium', price: 75000, defaultQuantity: 0 },
@@ -513,6 +515,8 @@ function getMenuForDay(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
+            { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
+            { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 60000, defaultQuantity: 0 },
             { name: 'Ikan dory 100 gram', price: 12000, defaultQuantity: 0 },
             { name: 'Ikan shisamo premium', price: 75000, defaultQuantity: 0 },
@@ -569,6 +573,8 @@ function getMenuForDay(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
+            { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
+            { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 60000, defaultQuantity: 0 },
             { name: 'Ikan dory 100 gram', price: 12000, defaultQuantity: 0 },
             { name: 'Ikan shisamo premium', price: 75000, defaultQuantity: 0 },
@@ -625,6 +631,8 @@ function getMenuForDay(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
+            { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
+            { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 60000, defaultQuantity: 0 },
             { name: 'Ikan dory 100 gram', price: 12000, defaultQuantity: 0 },
             { name: 'Ikan shisamo premium', price: 75000, defaultQuantity: 0 },
@@ -681,6 +689,8 @@ function getMenuForDay(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
+            { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
+            { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 60000, defaultQuantity: 0 },
             { name: 'Ikan dory 100 gram', price: 12000, defaultQuantity: 0 },
             { name: 'Ikan shisamo premium', price: 75000, defaultQuantity: 0 },
@@ -738,6 +748,8 @@ function getMenuForDay(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
+            { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
+            { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 60000, defaultQuantity: 0 },
             { name: 'Ikan dory 100 gram', price: 12000, defaultQuantity: 0 },
             { name: 'Ikan shisamo premium', price: 75000, defaultQuantity: 0 },
@@ -794,6 +806,8 @@ function getMenuForDay(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
+            { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
+            { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 60000, defaultQuantity: 0 },
             { name: 'Ikan dory 100 gram', price: 12000, defaultQuantity: 0 },
             { name: 'Ikan shisamo premium', price: 75000, defaultQuantity: 0 },
@@ -861,6 +875,8 @@ function getMenuForDayTemporaryOne(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
+            { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
+            { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 60000, defaultQuantity: 0 },
             { name: 'Ikan dory 100 gram', price: 12000, defaultQuantity: 0 },
             { name: 'Ikan shisamo premium', price: 75000, defaultQuantity: 0 },
@@ -917,6 +933,8 @@ function getMenuForDayTemporaryOne(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
+            { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
+            { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 60000, defaultQuantity: 0 },
             { name: 'Ikan dory 100 gram', price: 12000, defaultQuantity: 0 },
             { name: 'Ikan shisamo premium', price: 75000, defaultQuantity: 0 },
@@ -973,6 +991,8 @@ function getMenuForDayTemporaryOne(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
+            { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
+            { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 60000, defaultQuantity: 0 },
             { name: 'Ikan dory 100 gram', price: 12000, defaultQuantity: 0 },
             { name: 'Ikan shisamo premium', price: 75000, defaultQuantity: 0 },
@@ -1029,6 +1049,8 @@ function getMenuForDayTemporaryOne(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
+            { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
+            { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 60000, defaultQuantity: 0 },
             { name: 'Ikan dory 100 gram', price: 12000, defaultQuantity: 0 },
             { name: 'Ikan shisamo premium', price: 75000, defaultQuantity: 0 },
@@ -1085,6 +1107,8 @@ function getMenuForDayTemporaryOne(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
+            { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
+            { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 60000, defaultQuantity: 0 },
             { name: 'Ikan dory 100 gram', price: 12000, defaultQuantity: 0 },
             { name: 'Ikan shisamo premium', price: 75000, defaultQuantity: 0 },
@@ -1142,6 +1166,8 @@ function getMenuForDayTemporaryOne(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
+            { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
+            { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 60000, defaultQuantity: 0 },
             { name: 'Ikan dory 100 gram', price: 12000, defaultQuantity: 0 },
             { name: 'Ikan shisamo premium', price: 75000, defaultQuantity: 0 },
@@ -1198,6 +1224,8 @@ function getMenuForDayTemporaryOne(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
+            { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
+            { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 60000, defaultQuantity: 0 },
             { name: 'Ikan dory 100 gram', price: 12000, defaultQuantity: 0 },
             { name: 'Ikan shisamo premium', price: 75000, defaultQuantity: 0 },
