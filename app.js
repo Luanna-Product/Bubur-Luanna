@@ -472,7 +472,7 @@ function getMenuForDay(day)
             //{ name: 'Hati ayam kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             //{ name: 'Kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             //{ name: 'Ceker ayam kampung 10 pcs', price: 5000, defaultQuantity: 0 },
-            { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
+            //{ name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
@@ -988,7 +988,7 @@ function getMenuForDayTemporaryOne(day)
             //{ name: 'Hati ayam kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             //{ name: 'Kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             //{ name: 'Ceker ayam kampung 10 pcs', price: 5000, defaultQuantity: 0 },
-            { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
+            //{ name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
@@ -1378,7 +1378,7 @@ function getMenuForDayTemporaryTwo(day)
             //{ name: 'Hati ayam kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             //{ name: 'Kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             //{ name: 'Ceker ayam kampung 10 pcs', price: 5000, defaultQuantity: 0 },
-            { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
+            //{ name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
@@ -1853,12 +1853,12 @@ function updateOrderMethodCost()
     {
         if (totalDays < 7)
         {
-            orderMethodCost = 2000 * totalDays;
-            document.getElementById('order-cost').textContent = 'Biaya Ongkir: Rp2000 x ' + totalDays + ' = Rp' + orderMethodCost;
+            orderMethodCost = 3000 * totalDays;
+            document.getElementById('order-cost').textContent = 'Biaya Ongkir: Rp3000 x ' + totalDays + ' = Rp' + orderMethodCost;
         } else if (totalDays < 30)
         {
-            orderMethodCost = 1500 * totalDays;
-            document.getElementById('order-cost').textContent = 'Biaya Ongkir: Rp1500 x ' + totalDays + ' = Rp' + orderMethodCost;
+            orderMethodCost = 2000 * totalDays;
+            document.getElementById('order-cost').textContent = 'Biaya Ongkir: Rp2000 x ' + totalDays + ' = Rp' + orderMethodCost;
         } else 
         {
             orderMethodCost = 1000 * totalDays;
