@@ -482,6 +482,7 @@ function getMenuForDay(day)
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
             { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Monday (1)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ikan salmon + tomat', price: 5500, defaultQuantity: quantityBuburA_half },
@@ -545,6 +546,7 @@ function getMenuForDay(day)
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
             { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Tuesday (2)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur beras merah + hati ayam kampung + kacang merah', price: 3000, defaultQuantity: quantityBuburA_half },
@@ -608,14 +610,15 @@ function getMenuForDay(day)
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
             { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Wednesday (3) Rabu
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ayam kampung + wortel', price: 3000, defaultQuantity: quantityBuburA_half },
             { name: '1 Bubur ayam kampung + wortel', price: 6000, defaultQuantity: quantityBuburA_1 },
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur kurma + buah bit', price: 3000, defaultQuantity: quantityBuburB_half },
             { name: '1 Bubur kurma + buah bit', price: 6000, defaultQuantity: quantityBuburB_1 },
-            { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim ikan salmon', price: 5500, defaultQuantity: quantityNasiTim_half },
-            { name: '1 Nasi tim ikan salmon', price: 11000, defaultQuantity: quantityNasiTim_1 },
+            { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim ikan salmon', price: 6000, defaultQuantity: quantityNasiTim_half },
+            { name: '1 Nasi tim ikan salmon', price: 12000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup daging sapi', price: 9000, defaultQuantity: quantitySup },
             { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
@@ -671,6 +674,7 @@ function getMenuForDay(day)
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
             { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Thursday (4)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ikan dory + tomat', price: 3000, defaultQuantity: quantityBuburB_half },
@@ -734,6 +738,7 @@ function getMenuForDay(day)
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
             { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Friday (5)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur beras hitam + hati ayam kampung + kacang merah', price: 3000, defaultQuantity: quantityBuburA_half },
@@ -798,6 +803,7 @@ function getMenuForDay(day)
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
             { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Saturday (6)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ikan tuna + tomat', price: 3000, defaultQuantity: quantityBuburA_half },
@@ -861,6 +867,7 @@ function getMenuForDay(day)
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
             { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ]
     ];
 
@@ -935,6 +942,7 @@ function getMenuForDayTemporaryOne(day)
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
             { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Monday (1)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ikan salmon + tomat', price: 5500, defaultQuantity: quantityBuburA_half },
@@ -998,6 +1006,7 @@ function getMenuForDayTemporaryOne(day)
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
             { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Tuesday (2)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur beras merah + hati ayam kampung + kacang merah', price: 3000, defaultQuantity: quantityBuburA_half },
@@ -1061,14 +1070,15 @@ function getMenuForDayTemporaryOne(day)
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
             { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Wednesday (3) Rabu
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ayam kampung + wortel', price: 3000, defaultQuantity: quantityBuburA_half },
             { name: '1 Bubur ayam kampung + wortel', price: 6000, defaultQuantity: quantityBuburA_1 },
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur kurma + buah bit', price: 3000, defaultQuantity: quantityBuburB_half },
             { name: '1 Bubur kurma + buah bit', price: 6000, defaultQuantity: quantityBuburB_1 },
-            { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim ikan salmon', price: 5500, defaultQuantity: quantityNasiTim_half },
-            { name: '1 Nasi tim ikan salmon', price: 11000, defaultQuantity: quantityNasiTim_1 },
+            { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim ikan salmon', price: 6000, defaultQuantity: quantityNasiTim_half },
+            { name: '1 Nasi tim ikan salmon', price: 12000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup daging sapi', price: 9000, defaultQuantity: quantitySup },
             { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
@@ -1124,6 +1134,7 @@ function getMenuForDayTemporaryOne(day)
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
             { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Thursday (4)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ikan dory + tomat', price: 3000, defaultQuantity: quantityBuburB_half },
@@ -1187,6 +1198,7 @@ function getMenuForDayTemporaryOne(day)
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
             { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Friday (5)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur beras hitam + hati ayam kampung + kacang merah', price: 3000, defaultQuantity: quantityBuburA_half },
@@ -1251,6 +1263,7 @@ function getMenuForDayTemporaryOne(day)
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
             { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Saturday (6)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ikan tuna + tomat', price: 3000, defaultQuantity: quantityBuburA_half },
@@ -1314,6 +1327,7 @@ function getMenuForDayTemporaryOne(day)
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
             { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ]
     ];
 
@@ -1388,6 +1402,7 @@ function getMenuForDayTemporaryTwo(day)
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
             { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Monday (1)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ikan salmon + tomat', price: 6000, defaultQuantity: quantityBuburA_half },
@@ -1451,6 +1466,7 @@ function getMenuForDayTemporaryTwo(day)
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
             { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Tuesday (2)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur beras merah + hati ayam kampung + kacang merah', price: 3000, defaultQuantity: quantityBuburA_half },
@@ -1514,14 +1530,15 @@ function getMenuForDayTemporaryTwo(day)
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
             { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Wednesday (3) Rabu
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ayam kampung + wortel', price: 3000, defaultQuantity: quantityBuburA_half },
             { name: '1 Bubur ayam kampung + wortel', price: 6000, defaultQuantity: quantityBuburA_1 },
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur kurma + buah bit', price: 3000, defaultQuantity: quantityBuburB_half },
             { name: '1 Bubur kurma + buah bit', price: 6000, defaultQuantity: quantityBuburB_1 },
-            { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim ikan salmon', price: 5500, defaultQuantity: quantityNasiTim_half },
-            { name: '1 Nasi tim ikan salmon', price: 11000, defaultQuantity: quantityNasiTim_1 },
+            { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim ikan salmon', price: 6000, defaultQuantity: quantityNasiTim_half },
+            { name: '1 Nasi tim ikan salmon', price: 12000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup daging sapi', price: 9000, defaultQuantity: quantitySup },
             { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
@@ -1577,6 +1594,7 @@ function getMenuForDayTemporaryTwo(day)
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
             { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Thursday (4)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ikan dory + tomat', price: 3000, defaultQuantity: quantityBuburB_half },
@@ -1640,6 +1658,7 @@ function getMenuForDayTemporaryTwo(day)
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
             { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Friday (5)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur beras hitam + hati ayam kampung + kacang merah', price: 3000, defaultQuantity: quantityBuburA_half },
@@ -1704,14 +1723,15 @@ function getMenuForDayTemporaryTwo(day)
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
             { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Saturday (6)
-            { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ikan tuna + tomat', price: 3000, defaultQuantity: quantityBuburA_half },
-            { name: '1 Bubur ikan tuna + tomat', price: 6000, defaultQuantity: quantityBuburA_1 },
+            { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ikan kakap + tomat', price: 3000, defaultQuantity: quantityBuburA_half },
+            { name: '1 Bubur ikan kakap + tomat', price: 6000, defaultQuantity: quantityBuburA_1 },
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ayam kampung + brokoli', price: 3000, defaultQuantity: quantityBuburB_half },
             { name: '1 Bubur ayam kampung + brokoli', price: 6000, defaultQuantity: quantityBuburB_1 },
-            { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim ikan tuna', price: 3000, defaultQuantity: quantityNasiTim_half },
-            { name: '1 Nasi tim ikan tuna', price: 6000, defaultQuantity: quantityNasiTim_1 },
+            { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim ikan kakap', price: 3000, defaultQuantity: quantityNasiTim_half },
+            { name: '1 Nasi tim ikan kakap', price: 6000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup daging sapi', price: 9000, defaultQuantity: quantitySup },
             { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
@@ -1767,6 +1787,7 @@ function getMenuForDayTemporaryTwo(day)
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
             { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ]
     ];
 
