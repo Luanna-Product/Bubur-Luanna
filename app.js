@@ -427,7 +427,7 @@ function getMenuForDay(day)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim sumsum sapi', price: 3000, defaultQuantity: quantityNasiTim_half },
             { name: '1 Nasi tim sumsum sapi', price: 6000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup ikan dory', price: 9000, defaultQuantity: quantitySup },
-            { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
+            // { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
             { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
             { name: 'Bubur frozen 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozen },
@@ -472,7 +472,7 @@ function getMenuForDay(day)
             //{ name: 'Hati ayam kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             //{ name: 'Kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             //{ name: 'Ceker ayam kampung 10 pcs', price: 5000, defaultQuantity: 0 },
-            //{ name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
+            { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
@@ -481,7 +481,7 @@ function getMenuForDay(day)
             { name: 'Beras Hitam Organik', price: 35000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
-            { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sterofoam', price: 10000, defaultQuantity: 0 },
             { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Monday (1)
@@ -492,7 +492,7 @@ function getMenuForDay(day)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim ayam kampung', price: 3000, defaultQuantity: quantityNasiTim_half },
             { name: '1 Nasi tim ayam kampung', price: 6000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup ayam kampung', price: 9000, defaultQuantity: quantitySup },
-            { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
+            // { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
             { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
             { name: 'Bubur frozen 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozen },
@@ -536,7 +536,7 @@ function getMenuForDay(day)
             //{ name: 'Hati ayam kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             //{ name: 'Kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             //{ name: 'Ceker ayam kampung 10 pcs', price: 5000, defaultQuantity: 0 },
-            { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
+            // { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
@@ -545,7 +545,7 @@ function getMenuForDay(day)
             { name: 'Beras Hitam Organik', price: 35000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
-            { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sterofoam', price: 10000, defaultQuantity: 0 },
             { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Tuesday (2)
@@ -556,7 +556,7 @@ function getMenuForDay(day)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim daging sapi', price: 3000, defaultQuantity: quantityNasiTim_half },
             { name: '1 Nasi tim daging sapi', price: 6000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup ikan salmon', price: 21000, defaultQuantity: quantitySup },
-            { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
+            // { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
             { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
             { name: 'Bubur frozen 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozen },
@@ -600,7 +600,7 @@ function getMenuForDay(day)
             //{ name: 'Hati ayam kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             //{ name: 'Kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             //{ name: 'Ceker ayam kampung 10 pcs', price: 5000, defaultQuantity: 0 },
-            { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
+            // { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
@@ -609,7 +609,7 @@ function getMenuForDay(day)
             { name: 'Beras Hitam Organik', price: 35000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
-            { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sterofoam', price: 10000, defaultQuantity: 0 },
             { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Wednesday (3) Rabu
@@ -620,7 +620,7 @@ function getMenuForDay(day)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim ikan salmon', price: 6000, defaultQuantity: quantityNasiTim_half },
             { name: '1 Nasi tim ikan salmon', price: 12000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup daging sapi', price: 9000, defaultQuantity: quantitySup },
-            { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
+            // { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
             { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
             { name: 'Bubur frozen 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozen },
@@ -664,7 +664,7 @@ function getMenuForDay(day)
             //{ name: 'Hati ayam kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             //{ name: 'Kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             //{ name: 'Ceker ayam kampung 10 pcs', price: 5000, defaultQuantity: 0 },
-            { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
+            // { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
@@ -673,7 +673,7 @@ function getMenuForDay(day)
             { name: 'Beras Hitam Organik', price: 35000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
-            { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sterofoam', price: 10000, defaultQuantity: 0 },
             { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Thursday (4)
@@ -684,7 +684,7 @@ function getMenuForDay(day)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim ikan dory', price: 3000, defaultQuantity: quantityNasiTim_half },
             { name: '1 Nasi tim ikan dory', price: 6000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup ikan kakap', price: 21000, defaultQuantity: quantitySup },
-            { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
+            // { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
             { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
             { name: 'Bubur frozen 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozen },
@@ -728,7 +728,7 @@ function getMenuForDay(day)
             //{ name: 'Hati ayam kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             //{ name: 'Kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             //{ name: 'Ceker ayam kampung 10 pcs', price: 5000, defaultQuantity: 0 },
-            { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
+            // { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
@@ -737,7 +737,7 @@ function getMenuForDay(day)
             { name: 'Beras Hitam Organik', price: 35000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
-            { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sterofoam', price: 10000, defaultQuantity: 0 },
             { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Friday (5)
@@ -748,7 +748,7 @@ function getMenuForDay(day)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim hati ayam kampung', price: 3000, defaultQuantity: quantityNasiTim_half },
             { name: '1 Nasi tim hati ayam kampung', price: 6000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup ikan dory', price: 9000, defaultQuantity: quantitySup },
-            { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
+            // { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
             { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
             { name: 'Bubur frozen 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozen },
@@ -793,7 +793,7 @@ function getMenuForDay(day)
             //{ name: 'Hati ayam kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             //{ name: 'Kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             //{ name: 'Ceker ayam kampung 10 pcs', price: 5000, defaultQuantity: 0 },
-            { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
+            // { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
@@ -802,7 +802,7 @@ function getMenuForDay(day)
             { name: 'Beras Hitam Organik', price: 35000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
-            { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sterofoam', price: 10000, defaultQuantity: 0 },
             { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Saturday (6)
@@ -813,7 +813,7 @@ function getMenuForDay(day)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim ikan tuna', price: 3000, defaultQuantity: quantityNasiTim_half },
             { name: '1 Nasi tim ikan tuna', price: 6000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup daging sapi', price: 9000, defaultQuantity: quantitySup },
-            { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
+            // { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
             { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
             { name: 'Bubur frozen 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozen },
@@ -857,7 +857,7 @@ function getMenuForDay(day)
             //{ name: 'Hati ayam kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             //{ name: 'Kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             //{ name: 'Ceker ayam kampung 10 pcs', price: 5000, defaultQuantity: 0 },
-            { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
+            // { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
@@ -866,7 +866,7 @@ function getMenuForDay(day)
             { name: 'Beras Hitam Organik', price: 35000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
-            { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sterofoam', price: 10000, defaultQuantity: 0 },
             { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ]
     ];
@@ -887,7 +887,7 @@ function getMenuForDayTemporaryOne(day)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim sumsum sapi', price: 3000, defaultQuantity: quantityNasiTim_half },
             { name: '1 Nasi tim sumsum sapi', price: 6000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup ikan dory', price: 9000, defaultQuantity: quantitySup },
-            { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
+            // { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
             { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
             { name: 'Bubur frozen 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozen },
@@ -932,7 +932,7 @@ function getMenuForDayTemporaryOne(day)
             //{ name: 'Hati ayam kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             //{ name: 'Kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             //{ name: 'Ceker ayam kampung 10 pcs', price: 5000, defaultQuantity: 0 },
-            { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
+            // { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
@@ -941,7 +941,7 @@ function getMenuForDayTemporaryOne(day)
             { name: 'Beras Hitam Organik', price: 35000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
-            { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sterofoam', price: 10000, defaultQuantity: 0 },
             { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Monday (1)
@@ -952,7 +952,7 @@ function getMenuForDayTemporaryOne(day)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim ayam kampung', price: 3000, defaultQuantity: quantityNasiTim_half },
             { name: '1 Nasi tim ayam kampung', price: 6000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup ayam kampung', price: 9000, defaultQuantity: quantitySup },
-            { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
+            // { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
             { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
             { name: 'Bubur frozen 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozen },
@@ -996,7 +996,7 @@ function getMenuForDayTemporaryOne(day)
             //{ name: 'Hati ayam kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             //{ name: 'Kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             //{ name: 'Ceker ayam kampung 10 pcs', price: 5000, defaultQuantity: 0 },
-            //{ name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
+            { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
@@ -1005,7 +1005,7 @@ function getMenuForDayTemporaryOne(day)
             { name: 'Beras Hitam Organik', price: 35000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
-            { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sterofoam', price: 10000, defaultQuantity: 0 },
             { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Tuesday (2)
@@ -1016,7 +1016,7 @@ function getMenuForDayTemporaryOne(day)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim daging sapi', price: 3000, defaultQuantity: quantityNasiTim_half },
             { name: '1 Nasi tim daging sapi', price: 6000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup ikan salmon', price: 21000, defaultQuantity: quantitySup },
-            { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
+            // { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
             { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
             { name: 'Bubur frozen 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozen },
@@ -1060,7 +1060,7 @@ function getMenuForDayTemporaryOne(day)
             //{ name: 'Hati ayam kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             //{ name: 'Kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             //{ name: 'Ceker ayam kampung 10 pcs', price: 5000, defaultQuantity: 0 },
-            { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
+            // { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
@@ -1069,7 +1069,7 @@ function getMenuForDayTemporaryOne(day)
             { name: 'Beras Hitam Organik', price: 35000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
-            { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sterofoam', price: 10000, defaultQuantity: 0 },
             { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Wednesday (3) Rabu
@@ -1080,7 +1080,7 @@ function getMenuForDayTemporaryOne(day)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim ikan salmon', price: 6000, defaultQuantity: quantityNasiTim_half },
             { name: '1 Nasi tim ikan salmon', price: 12000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup daging sapi', price: 9000, defaultQuantity: quantitySup },
-            { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
+            // { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
             { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
             { name: 'Bubur frozen 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozen },
@@ -1124,7 +1124,7 @@ function getMenuForDayTemporaryOne(day)
             //{ name: 'Hati ayam kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             //{ name: 'Kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             //{ name: 'Ceker ayam kampung 10 pcs', price: 5000, defaultQuantity: 0 },
-            { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
+            // { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
@@ -1133,7 +1133,7 @@ function getMenuForDayTemporaryOne(day)
             { name: 'Beras Hitam Organik', price: 35000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
-            { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sterofoam', price: 10000, defaultQuantity: 0 },
             { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Thursday (4)
@@ -1144,7 +1144,7 @@ function getMenuForDayTemporaryOne(day)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim ikan dory', price: 3000, defaultQuantity: quantityNasiTim_half },
             { name: '1 Nasi tim ikan dory', price: 6000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup ikan kakap', price: 21000, defaultQuantity: quantitySup },
-            { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
+            // { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
             { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
             { name: 'Bubur frozen 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozen },
@@ -1188,7 +1188,7 @@ function getMenuForDayTemporaryOne(day)
             //{ name: 'Hati ayam kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             //{ name: 'Kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             //{ name: 'Ceker ayam kampung 10 pcs', price: 5000, defaultQuantity: 0 },
-            { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
+            // { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
@@ -1197,7 +1197,7 @@ function getMenuForDayTemporaryOne(day)
             { name: 'Beras Hitam Organik', price: 35000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
-            { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sterofoam', price: 10000, defaultQuantity: 0 },
             { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Friday (5)
@@ -1208,7 +1208,7 @@ function getMenuForDayTemporaryOne(day)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim hati ayam kampung', price: 3000, defaultQuantity: quantityNasiTim_half },
             { name: '1 Nasi tim hati ayam kampung', price: 6000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup ikan dory', price: 9000, defaultQuantity: quantitySup },
-            { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
+            // { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
             { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
             { name: 'Bubur frozen 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozen },
@@ -1253,7 +1253,7 @@ function getMenuForDayTemporaryOne(day)
             //{ name: 'Hati ayam kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             //{ name: 'Kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             //{ name: 'Ceker ayam kampung 10 pcs', price: 5000, defaultQuantity: 0 },
-            { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
+            // { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
@@ -1262,7 +1262,7 @@ function getMenuForDayTemporaryOne(day)
             { name: 'Beras Hitam Organik', price: 35000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
-            { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sterofoam', price: 10000, defaultQuantity: 0 },
             { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Saturday (6)
@@ -1273,7 +1273,7 @@ function getMenuForDayTemporaryOne(day)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim ikan tuna', price: 3000, defaultQuantity: quantityNasiTim_half },
             { name: '1 Nasi tim ikan tuna', price: 6000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup daging sapi', price: 9000, defaultQuantity: quantitySup },
-            { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
+            // { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
             { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
             { name: 'Bubur frozen 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozen },
@@ -1317,7 +1317,7 @@ function getMenuForDayTemporaryOne(day)
             //{ name: 'Hati ayam kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             //{ name: 'Kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             //{ name: 'Ceker ayam kampung 10 pcs', price: 5000, defaultQuantity: 0 },
-            { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
+            // { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
@@ -1326,7 +1326,7 @@ function getMenuForDayTemporaryOne(day)
             { name: 'Beras Hitam Organik', price: 35000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
-            { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sterofoam', price: 10000, defaultQuantity: 0 },
             { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ]
     ];
@@ -1347,7 +1347,7 @@ function getMenuForDayTemporaryTwo(day)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim sumsum sapi', price: 3000, defaultQuantity: quantityNasiTim_half },
             { name: '1 Nasi tim sumsum sapi', price: 6000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup ikan dory', price: 9000, defaultQuantity: quantitySup },
-            { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
+            // { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
             { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
             { name: 'Bubur frozen 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozen },
@@ -1392,7 +1392,7 @@ function getMenuForDayTemporaryTwo(day)
             //{ name: 'Hati ayam kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             //{ name: 'Kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             //{ name: 'Ceker ayam kampung 10 pcs', price: 5000, defaultQuantity: 0 },
-            //{ name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
+            { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
@@ -1401,7 +1401,7 @@ function getMenuForDayTemporaryTwo(day)
             { name: 'Beras Hitam Organik', price: 35000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
-            { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sterofoam', price: 10000, defaultQuantity: 0 },
             { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Monday (1)
@@ -1412,7 +1412,7 @@ function getMenuForDayTemporaryTwo(day)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim ayam kampung', price: 3000, defaultQuantity: quantityNasiTim_half },
             { name: '1 Nasi tim ayam kampung', price: 6000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup ayam kampung', price: 9000, defaultQuantity: quantitySup },
-            { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
+            // { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
             { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
             { name: 'Bubur frozen 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozen },
@@ -1456,7 +1456,7 @@ function getMenuForDayTemporaryTwo(day)
             //{ name: 'Hati ayam kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             //{ name: 'Kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             //{ name: 'Ceker ayam kampung 10 pcs', price: 5000, defaultQuantity: 0 },
-            { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
+            // { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
@@ -1465,7 +1465,7 @@ function getMenuForDayTemporaryTwo(day)
             { name: 'Beras Hitam Organik', price: 35000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
-            { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sterofoam', price: 10000, defaultQuantity: 0 },
             { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Tuesday (2)
@@ -1476,7 +1476,7 @@ function getMenuForDayTemporaryTwo(day)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim daging sapi', price: 3000, defaultQuantity: quantityNasiTim_half },
             { name: '1 Nasi tim daging sapi', price: 6000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup ikan salmon', price: 21000, defaultQuantity: quantitySup },
-            { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
+            // { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
             { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
             { name: 'Bubur frozen 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozen },
@@ -1520,7 +1520,7 @@ function getMenuForDayTemporaryTwo(day)
             //{ name: 'Hati ayam kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             //{ name: 'Kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             //{ name: 'Ceker ayam kampung 10 pcs', price: 5000, defaultQuantity: 0 },
-            { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
+            // { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
@@ -1529,7 +1529,7 @@ function getMenuForDayTemporaryTwo(day)
             { name: 'Beras Hitam Organik', price: 35000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
-            { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sterofoam', price: 10000, defaultQuantity: 0 },
             { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Wednesday (3) Rabu
@@ -1540,7 +1540,7 @@ function getMenuForDayTemporaryTwo(day)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim ikan salmon', price: 6000, defaultQuantity: quantityNasiTim_half },
             { name: '1 Nasi tim ikan salmon', price: 12000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup daging sapi', price: 9000, defaultQuantity: quantitySup },
-            { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
+            // { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
             { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
             { name: 'Bubur frozen 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozen },
@@ -1584,7 +1584,7 @@ function getMenuForDayTemporaryTwo(day)
             //{ name: 'Hati ayam kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             //{ name: 'Kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             //{ name: 'Ceker ayam kampung 10 pcs', price: 5000, defaultQuantity: 0 },
-            { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
+            // { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
@@ -1593,7 +1593,7 @@ function getMenuForDayTemporaryTwo(day)
             { name: 'Beras Hitam Organik', price: 35000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
-            { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sterofoam', price: 10000, defaultQuantity: 0 },
             { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Thursday (4)
@@ -1604,7 +1604,7 @@ function getMenuForDayTemporaryTwo(day)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim ikan dory', price: 3000, defaultQuantity: quantityNasiTim_half },
             { name: '1 Nasi tim ikan dory', price: 6000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup ikan kakap', price: 21000, defaultQuantity: quantitySup },
-            { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
+            // { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
             { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
             { name: 'Bubur frozen 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozen },
@@ -1648,7 +1648,7 @@ function getMenuForDayTemporaryTwo(day)
             //{ name: 'Hati ayam kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             //{ name: 'Kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             //{ name: 'Ceker ayam kampung 10 pcs', price: 5000, defaultQuantity: 0 },
-            { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
+            // { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
@@ -1657,7 +1657,7 @@ function getMenuForDayTemporaryTwo(day)
             { name: 'Beras Hitam Organik', price: 35000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
-            { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sterofoam', price: 10000, defaultQuantity: 0 },
             { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Friday (5)
@@ -1668,7 +1668,7 @@ function getMenuForDayTemporaryTwo(day)
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim hati ayam kampung', price: 3000, defaultQuantity: quantityNasiTim_half },
             { name: '1 Nasi tim hati ayam kampung', price: 6000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup ikan dory', price: 9000, defaultQuantity: quantitySup },
-            { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
+            // { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
             { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
             { name: 'Bubur frozen 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozen },
@@ -1713,7 +1713,7 @@ function getMenuForDayTemporaryTwo(day)
             //{ name: 'Hati ayam kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             //{ name: 'Kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             //{ name: 'Ceker ayam kampung 10 pcs', price: 5000, defaultQuantity: 0 },
-            { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
+            // { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
@@ -1722,18 +1722,18 @@ function getMenuForDayTemporaryTwo(day)
             { name: 'Beras Hitam Organik', price: 35000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
-            { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sterofoam', price: 10000, defaultQuantity: 0 },
             { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ],
         [ // Saturday (6)
-            { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ikan kakap + tomat', price: 3000, defaultQuantity: quantityBuburA_half },
-            { name: '1 Bubur ikan kakap + tomat', price: 6000, defaultQuantity: quantityBuburA_1 },
+            { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ikan tuna + tomat', price: 3000, defaultQuantity: quantityBuburA_half },
+            { name: '1 Bubur ikan tuna + tomat', price: 6000, defaultQuantity: quantityBuburA_1 },
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ayam kampung + brokoli', price: 3000, defaultQuantity: quantityBuburB_half },
             { name: '1 Bubur ayam kampung + brokoli', price: 6000, defaultQuantity: quantityBuburB_1 },
-            { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim ikan kakap', price: 3000, defaultQuantity: quantityNasiTim_half },
-            { name: '1 Nasi tim ikan kakap', price: 6000, defaultQuantity: quantityNasiTim_1 },
+            { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim ikan tuna', price: 3000, defaultQuantity: quantityNasiTim_half },
+            { name: '1 Nasi tim ikan tuna', price: 6000, defaultQuantity: quantityNasiTim_1 },
             { name: 'Sup daging sapi', price: 9000, defaultQuantity: quantitySup },
-            { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
+            // { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
             { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
             { name: 'Bubur frozen 1 pcs', price: 3000, defaultQuantity: quantityBuburFrozen },
@@ -1777,7 +1777,7 @@ function getMenuForDayTemporaryTwo(day)
             //{ name: 'Hati ayam kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             //{ name: 'Kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             //{ name: 'Ceker ayam kampung 10 pcs', price: 5000, defaultQuantity: 0 },
-            { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
+            // { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
@@ -1786,7 +1786,7 @@ function getMenuForDayTemporaryTwo(day)
             { name: 'Beras Hitam Organik', price: 35000, defaultQuantity: 0 },
 
             { name: 'Saringan', price: 10000, defaultQuantity: 0 },
-            { name: 'Sterofoam', price: 8000, defaultQuantity: 0 },
+            { name: 'Sterofoam', price: 10000, defaultQuantity: 0 },
             { name: 'Sendok anti GTM', price: 30000, defaultQuantity: 0 },
         ]
     ];
