@@ -457,7 +457,7 @@ function getMenuForDay(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
-            { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
+            // { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
             { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 60000, defaultQuantity: 0 },
@@ -521,7 +521,7 @@ function getMenuForDay(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
-            { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
+            // { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
             { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 60000, defaultQuantity: 0 },
@@ -585,7 +585,7 @@ function getMenuForDay(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
-            { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
+            // { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
             { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 60000, defaultQuantity: 0 },
@@ -649,7 +649,7 @@ function getMenuForDay(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
-            { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
+            // { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
             { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 60000, defaultQuantity: 0 },
@@ -683,7 +683,7 @@ function getMenuForDay(day)
             { name: '1 Bubur jagung + keju', price: 6000, defaultQuantity: quantityBuburA_1 },
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim ikan dory', price: 3000, defaultQuantity: quantityNasiTim_half },
             { name: '1 Nasi tim ikan dory', price: 6000, defaultQuantity: quantityNasiTim_1 },
-            { name: 'Sup ikan kakap', price: 21000, defaultQuantity: quantitySup },
+            { name: 'Sup ikan salmon', price: 21000, defaultQuantity: quantitySup },
             // { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
             { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
@@ -713,7 +713,7 @@ function getMenuForDay(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
-            { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
+            // { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
             { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 60000, defaultQuantity: 0 },
@@ -778,7 +778,7 @@ function getMenuForDay(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
-            { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
+            // { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
             { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 60000, defaultQuantity: 0 },
@@ -806,8 +806,8 @@ function getMenuForDay(day)
             { name: 'Sendok anti GTM', price: 35000, defaultQuantity: 0 },
         ],
         [ // Saturday (6)
-            { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ikan kakap + tomat', price: 3000, defaultQuantity: quantityBuburA_half },
-            { name: '1 Bubur ikan kakap + tomat', price: 6000, defaultQuantity: quantityBuburA_1 },
+            { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ikan surung + tomat', price: 3000, defaultQuantity: quantityBuburA_half },
+            { name: '1 Bubur ikan surung + tomat', price: 6000, defaultQuantity: quantityBuburA_1 },
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ayam kampung + brokoli', price: 3000, defaultQuantity: quantityBuburB_half },
             { name: '1 Bubur ayam kampung + brokoli', price: 6000, defaultQuantity: quantityBuburB_1 },
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim ikan kakap', price: 3000, defaultQuantity: quantityNasiTim_half },
@@ -842,7 +842,7 @@ function getMenuForDay(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
-            { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
+            // { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
             { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 60000, defaultQuantity: 0 },
@@ -917,7 +917,7 @@ function getMenuForDayTemporaryOne(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
-            { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
+            // { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
             { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 66000, defaultQuantity: 0 },
@@ -981,7 +981,7 @@ function getMenuForDayTemporaryOne(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
-            { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
+            // { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
             { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 66000, defaultQuantity: 0 },
@@ -1045,7 +1045,7 @@ function getMenuForDayTemporaryOne(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
-            { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
+            // { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
             { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 66000, defaultQuantity: 0 },
@@ -1109,7 +1109,7 @@ function getMenuForDayTemporaryOne(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
-            { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
+            // { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
             { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 66000, defaultQuantity: 0 },
@@ -1143,7 +1143,7 @@ function getMenuForDayTemporaryOne(day)
             { name: '1 Bubur jagung + keju', price: 6000, defaultQuantity: quantityBuburA_1 },
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim ikan dory', price: 3000, defaultQuantity: quantityNasiTim_half },
             { name: '1 Nasi tim ikan dory', price: 6000, defaultQuantity: quantityNasiTim_1 },
-            { name: 'Sup ikan kakap', price: 21000, defaultQuantity: quantitySup },
+            { name: 'Sup ikan salmon', price: 21000, defaultQuantity: quantitySup },
             // { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
             { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
@@ -1173,7 +1173,7 @@ function getMenuForDayTemporaryOne(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
-            { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
+            // { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
             { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 66000, defaultQuantity: 0 },
@@ -1238,7 +1238,7 @@ function getMenuForDayTemporaryOne(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
-            { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
+            // { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
             { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 66000, defaultQuantity: 0 },
@@ -1266,8 +1266,8 @@ function getMenuForDayTemporaryOne(day)
             { name: 'Sendok anti GTM', price: 35000, defaultQuantity: 0 },
         ],
         [ // Saturday (6)
-            { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ikan kakap + tomat', price: 3000, defaultQuantity: quantityBuburA_half },
-            { name: '1 Bubur ikan kakap + tomat', price: 6000, defaultQuantity: quantityBuburA_1 },
+            { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ikan surung + tomat', price: 3000, defaultQuantity: quantityBuburA_half },
+            { name: '1 Bubur ikan surung + tomat', price: 6000, defaultQuantity: quantityBuburA_1 },
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ayam kampung + brokoli', price: 3000, defaultQuantity: quantityBuburB_half },
             { name: '1 Bubur ayam kampung + brokoli', price: 6000, defaultQuantity: quantityBuburB_1 },
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim ikan kakap', price: 3000, defaultQuantity: quantityNasiTim_half },
@@ -1302,7 +1302,7 @@ function getMenuForDayTemporaryOne(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
-            { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
+            // { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
             { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 66000, defaultQuantity: 0 },
@@ -1377,7 +1377,7 @@ function getMenuForDayTemporaryTwo(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
-            { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
+            // { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
             { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 66000, defaultQuantity: 0 },
@@ -1441,7 +1441,7 @@ function getMenuForDayTemporaryTwo(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
-            { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
+            // { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
             { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 66000, defaultQuantity: 0 },
@@ -1505,7 +1505,7 @@ function getMenuForDayTemporaryTwo(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
-            { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
+            // { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
             { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 66000, defaultQuantity: 0 },
@@ -1569,7 +1569,7 @@ function getMenuForDayTemporaryTwo(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
-            { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
+            // { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
             { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 66000, defaultQuantity: 0 },
@@ -1603,7 +1603,7 @@ function getMenuForDayTemporaryTwo(day)
             { name: '1 Bubur jagung + keju', price: 6000, defaultQuantity: quantityBuburA_1 },
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim ikan dory', price: 3000, defaultQuantity: quantityNasiTim_half },
             { name: '1 Nasi tim ikan dory', price: 6000, defaultQuantity: quantityNasiTim_1 },
-            { name: 'Sup ikan kakap', price: 21000, defaultQuantity: quantitySup },
+            { name: 'Sup ikan salmon', price: 21000, defaultQuantity: quantitySup },
             // { name: 'Jus buah', price: 5000, defaultQuantity: quantityJusBuah },
 
             { name: 'Paket bubur frozen (isi 10 pcs)', price: 30000, defaultQuantity: quantityPaketBuburFrozen },
@@ -1633,7 +1633,7 @@ function getMenuForDayTemporaryTwo(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
-            { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
+            // { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
             { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 66000, defaultQuantity: 0 },
@@ -1698,7 +1698,7 @@ function getMenuForDayTemporaryTwo(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
-            { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
+            // { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
             { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 66000, defaultQuantity: 0 },
@@ -1726,8 +1726,8 @@ function getMenuForDayTemporaryTwo(day)
             { name: 'Sendok anti GTM', price: 35000, defaultQuantity: 0 },
         ],
         [ // Saturday (6)
-            { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ikan kakap + tomat', price: 3000, defaultQuantity: quantityBuburA_half },
-            { name: '1 Bubur ikan kakap + tomat', price: 6000, defaultQuantity: quantityBuburA_1 },
+            { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ikan surung + tomat', price: 3000, defaultQuantity: quantityBuburA_half },
+            { name: '1 Bubur ikan surung + tomat', price: 6000, defaultQuantity: quantityBuburA_1 },
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Bubur ayam kampung + brokoli', price: 3000, defaultQuantity: quantityBuburB_half },
             { name: '1 Bubur ayam kampung + brokoli', price: 6000, defaultQuantity: quantityBuburB_1 },
             { name: '<sup>1</sup>&frasl;<sub>2</sub> Nasi tim ikan kakap', price: 3000, defaultQuantity: quantityNasiTim_half },
@@ -1762,7 +1762,7 @@ function getMenuForDayTemporaryTwo(day)
 
             { name: 'Kaldu ayam kampung', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu daging sapi', price: 3000, defaultQuantity: 0 },
-            { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
+            // { name: 'Kaldu ikan tuna', price: 3000, defaultQuantity: 0 },
             { name: 'Kaldu ikan salmon', price: 4000, defaultQuantity: 0 },
             { name: 'Kaldu ikan kakap', price: 4000, defaultQuantity: 0 },
             { name: 'Ikan salmon 100 gram', price: 66000, defaultQuantity: 0 },
