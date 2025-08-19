@@ -449,7 +449,8 @@ function getMenuForDay(day)
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen original 5 pcs', price: 15000, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen pedas 5 pcs', price: 15500, defaultQuantity: 0 },
             { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0 },
             { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0 },
 
@@ -513,7 +514,8 @@ function getMenuForDay(day)
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen original 5 pcs', price: 15000, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen pedas 5 pcs', price: 15500, defaultQuantity: 0 },
             { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0 },
             { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0 },
 
@@ -577,7 +579,8 @@ function getMenuForDay(day)
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen original 5 pcs', price: 15000, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen pedas 5 pcs', price: 15500, defaultQuantity: 0 },
             { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0 },
             { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0 },
 
@@ -641,7 +644,8 @@ function getMenuForDay(day)
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen original 5 pcs', price: 15000, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen pedas 5 pcs', price: 15500, defaultQuantity: 0 },
             { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0 },
             { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0 },
 
@@ -705,7 +709,8 @@ function getMenuForDay(day)
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen original 5 pcs', price: 15000, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen pedas 5 pcs', price: 15500, defaultQuantity: 0 },
             { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0 },
             { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0 },
 
@@ -770,7 +775,8 @@ function getMenuForDay(day)
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen original 5 pcs', price: 15000, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen pedas 5 pcs', price: 15500, defaultQuantity: 0 },
             { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0 },
             { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0 },
 
@@ -834,7 +840,8 @@ function getMenuForDay(day)
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen original 5 pcs', price: 15000, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen pedas 5 pcs', price: 15500, defaultQuantity: 0 },
             { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0 },
             { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0 },
 
@@ -909,7 +916,8 @@ function getMenuForDayTemporaryOne(day)
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen original 5 pcs', price: 15000, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen pedas 5 pcs', price: 15500, defaultQuantity: 0 },
             { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0 },
             { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0 },
 
@@ -973,7 +981,8 @@ function getMenuForDayTemporaryOne(day)
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen original 5 pcs', price: 15000, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen pedas 5 pcs', price: 15500, defaultQuantity: 0 },
             { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0 },
             { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0 },
 
@@ -1037,7 +1046,8 @@ function getMenuForDayTemporaryOne(day)
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen original 5 pcs', price: 15000, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen pedas 5 pcs', price: 15500, defaultQuantity: 0 },
             { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0 },
             { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0 },
 
@@ -1101,7 +1111,8 @@ function getMenuForDayTemporaryOne(day)
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen original 5 pcs', price: 15000, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen pedas 5 pcs', price: 15500, defaultQuantity: 0 },
             { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0 },
             { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0 },
 
@@ -1165,7 +1176,8 @@ function getMenuForDayTemporaryOne(day)
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen original 5 pcs', price: 15000, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen pedas 5 pcs', price: 15500, defaultQuantity: 0 },
             { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0 },
             { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0 },
 
@@ -1230,7 +1242,8 @@ function getMenuForDayTemporaryOne(day)
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen original 5 pcs', price: 15000, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen pedas 5 pcs', price: 15500, defaultQuantity: 0 },
             { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0 },
             { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0 },
 
@@ -1294,7 +1307,8 @@ function getMenuForDayTemporaryOne(day)
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen original 5 pcs', price: 15000, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen pedas 5 pcs', price: 15500, defaultQuantity: 0 },
             { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0 },
             { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0 },
 
@@ -1369,7 +1383,8 @@ function getMenuForDayTemporaryTwo(day)
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen original 5 pcs', price: 15000, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen pedas 5 pcs', price: 15500, defaultQuantity: 0 },
             { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0 },
             { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0 },
 
@@ -1433,7 +1448,8 @@ function getMenuForDayTemporaryTwo(day)
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen original 5 pcs', price: 15000, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen pedas 5 pcs', price: 15500, defaultQuantity: 0 },
             { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0 },
             { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0 },
 
@@ -1497,7 +1513,8 @@ function getMenuForDayTemporaryTwo(day)
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen original 5 pcs', price: 15000, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen pedas 5 pcs', price: 15500, defaultQuantity: 0 },
             { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0 },
             { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0 },
 
@@ -1561,7 +1578,8 @@ function getMenuForDayTemporaryTwo(day)
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen original 5 pcs', price: 15000, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen pedas 5 pcs', price: 15500, defaultQuantity: 0 },
             { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0 },
             { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0 },
 
@@ -1625,7 +1643,8 @@ function getMenuForDayTemporaryTwo(day)
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen original 5 pcs', price: 15000, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen pedas 5 pcs', price: 15500, defaultQuantity: 0 },
             { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0 },
             { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0 },
 
@@ -1690,7 +1709,8 @@ function getMenuForDayTemporaryTwo(day)
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen original 5 pcs', price: 15000, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen pedas 5 pcs', price: 15500, defaultQuantity: 0 },
             { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0 },
             { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0 },
 
@@ -1754,7 +1774,8 @@ function getMenuForDayTemporaryTwo(day)
 
             { name: 'Galantin original', price: 10000, defaultQuantity: 0 },
             { name: 'Galantin pedas', price: 10000, defaultQuantity: 0 },
-            { name: 'Risol mayo frozen 5 pcs', price: 15500, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen original 5 pcs', price: 15000, defaultQuantity: 0 },
+            { name: 'Risol mayo frozen pedas 5 pcs', price: 15500, defaultQuantity: 0 },
             { name: 'Makaroni schottle frozen', price: 3000, defaultQuantity: 0 },
             { name: 'Paket makaroni schottle frozen (isi 10 pcs)', price: 30000, defaultQuantity: 0 },
 
