@@ -473,7 +473,7 @@ function getMenuForDay(day)
             { name: 'Hati ampela ayam kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             //{ name: 'Kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             //{ name: 'Ceker ayam kampung 10 pcs', price: 5000, defaultQuantity: 0 },
-            { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
+            // { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             // { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
@@ -944,7 +944,7 @@ function getMenuForDayTemporaryOne(day)
             { name: 'Hati ampela ayam kampung 5 pcs', price: 25000, defaultQuantity: 0 },
             //{ name: 'Kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             //{ name: 'Ceker ayam kampung 10 pcs', price: 5000, defaultQuantity: 0 },
-            { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
+            // { name: 'Ceker dan kepala ayam kampung 5 pcs', price: 5000, defaultQuantity: 0 },
             { name: 'Beef Slice 200 gram', price: 40000, defaultQuantity: 0 },
             // { name: 'Madu', price: 75000, defaultQuantity: 0 },
 
