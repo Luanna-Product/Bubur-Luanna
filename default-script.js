@@ -18,7 +18,7 @@ let quantityBuburB_1 = 0;
 let quantityNasiTim_half = 0;
 let quantityNasiTim_1 = 0;
 let quantitySup = 0;
-let quantityJusBuah = 0;
+// let quantityJusBuah = 0;
 let quantityPaketBuburFrozen = 0;
 let quantityBuburFrozen = 0;
 let quantityBuburFrozenSalmon = 0;
@@ -36,7 +36,7 @@ function saveQuantities()
     quantityNasiTim_half = parseInt(document.getElementById('quantity-nasitim-half').value) || 0;
     quantityNasiTim_1 = parseInt(document.getElementById('quantity-nasitim-1').value) || 0;
     quantitySup = parseInt(document.getElementById('quantity-sup').value) || 0;
-    quantityJusBuah = parseInt(document.getElementById('quantity-jusbuah').value) || 0;
+    // quantityJusBuah = parseInt(document.getElementById('quantity-jusbuah').value) || 0;
     quantityPaketBuburFrozen = parseInt(document.getElementById('quantity-paketbuburfrozen').value) || 0;
     quantityBuburFrozen = parseInt(document.getElementById('quantity-buburfrozen').value) || 0;
     quantityBuburFrozenSalmon = parseInt(document.getElementById('quantity-buburfrozensalmon').value) || 0;
@@ -54,7 +54,8 @@ quantityInputs.forEach(input =>
 // Fungsi untuk melakukan log data ke konsol
 function logData() {
     // Membangun URL dengan parameter variabel
-    const url = `order.html?packet=${packet}&buburA_half=${quantityBuburA_half}&buburA_1=${quantityBuburA_1}&buburB_half=${quantityBuburB_half}&buburB_1=${quantityBuburB_1}&nasitim_half=${quantityNasiTim_half}&nasitim_1=${quantityNasiTim_1}&sup=${quantitySup}&jusbuah=${quantityJusBuah}&paketbuburfrozen=${quantityPaketBuburFrozen}&buburfrozen=${quantityBuburFrozen}&buburfrozensalmon=${quantityBuburFrozenSalmon}&paketnasitimfrozen=${quantityPaketNasiTimFrozen}&nasitimfrozen=${quantityNasiTimFrozen}&nasitimfrozensalmon=${quantityNasiTimFrozenSalmon}`;
+    // const url = `order.html?packet=${packet}&buburA_half=${quantityBuburA_half}&buburA_1=${quantityBuburA_1}&buburB_half=${quantityBuburB_half}&buburB_1=${quantityBuburB_1}&nasitim_half=${quantityNasiTim_half}&nasitim_1=${quantityNasiTim_1}&sup=${quantitySup}&jusbuah=${quantityJusBuah}&paketbuburfrozen=${quantityPaketBuburFrozen}&buburfrozen=${quantityBuburFrozen}&buburfrozensalmon=${quantityBuburFrozenSalmon}&paketnasitimfrozen=${quantityPaketNasiTimFrozen}&nasitimfrozen=${quantityNasiTimFrozen}&nasitimfrozensalmon=${quantityNasiTimFrozenSalmon}`;
+    const url = `order.html?packet=${packet}&buburA_half=${quantityBuburA_half}&buburA_1=${quantityBuburA_1}&buburB_half=${quantityBuburB_half}&buburB_1=${quantityBuburB_1}&nasitim_half=${quantityNasiTim_half}&nasitim_1=${quantityNasiTim_1}&sup=${quantitySup}&paketbuburfrozen=${quantityPaketBuburFrozen}&buburfrozen=${quantityBuburFrozen}&buburfrozensalmon=${quantityBuburFrozenSalmon}&paketnasitimfrozen=${quantityPaketNasiTimFrozen}&nasitimfrozen=${quantityNasiTimFrozen}&nasitimfrozensalmon=${quantityNasiTimFrozenSalmon}`;
 
     // Mengarahkan halaman ke URL yang dibangun
     window.location.href = url;
